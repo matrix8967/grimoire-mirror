@@ -9,6 +9,7 @@ description = "history > Grimoire.md"
 [output.html]
 default-theme = "navy"
 git-repository-url = "https://gitlab.com/matrix8967/grimoire"
+git-repository-icon = "fa-gitlab"
 cname = "grimoire.mainframe.computer"
 
 [output.html.print]
