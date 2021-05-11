@@ -1,0 +1,15 @@
+[book]
+authors = ["matrix8967"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Grimoire"
+description = "history > Grimoire.md"
+
+[output.html]
+default-theme = "navy"
+git-repository-url = "https://gitlab.com/matrix8967/grimoire"
+cname = "grimoire.mainframe.computer"
+
+[output.html.print]
+enable = false
