@@ -2,7 +2,7 @@
 
 `ssh` is a network protocol used to provide secure services on a presumably insecure network. It's most common use case is to provide a `s`ecure `sh`ell without fear of the network traffic being intercepted in transit. However, it has _many_ other practical uses outside of this.
 
-The role `ssh` plays at Apptegy, (and around the world) show no signs of becoming obsolete, so it's worth codifying some of our own "best practices" and common pitfalls.
+The role `ssh` plays at `$EMPLOYER_I_STARTED_WORKING_ON_DOCUMENTATION_FOR_AND_WILL_JUST_FORK_WHEN_IT_SUCKS_LESS_OR_SOMETHING`, (and around the world) show no signs of becoming obsolete, so it's worth codifying some of our own "best practices" and common pitfalls.
 
 ---
 
@@ -18,7 +18,7 @@ Creating a keypair is done by using the `ssh-keygen` command. By default - this 
 
 The default private key file is located at `~/.id_rsa` and the default public key is located at `~/id_rsa.pub`.
 
-It's likely Apptegy's SSH-Users will be using multiple keys
+It's likely `$EMPLOYER_I_STARTED_WORKING_ON_DOCUMENTATION_FOR_AND_WILL_JUST_FORK_WHEN_IT_SUCKS_LESS_OR_SOMETHING`'s SSH-Users will be using multiple keys
 
 We're going to ignore the defaults for now, and create the key by specifying the exact key location, and the `comment` section of the key:
 
@@ -38,15 +38,6 @@ To initiate a key exchange, we use the `ssh-copy-id` command, while specifying o
 
 The remote host will prompt for another authentication method, and once accepted, will add the contents of our `example_01.pub` file to `~/.authorized_keys`.
 
-## Passphrases on Keys
-
-- Apptegy Client SSH Keypairs should be generated without a passphrase.
-- Keys for automation should be generated without a passphrase for now.
-    + Once Automation is in better shape, we can modify the `sshd` to accept the keypair without prompting for the passphrase. 01-22-20 -AM.
-- User Auth Keys should be generated _with_ a passphrase.
-	+ Passphrase can/should be stored in the user's `keychain` of whatever OS they're using.
-
-
 ---
 
 # Current WIP / TODO from the DevOps Team:
@@ -58,20 +49,6 @@ The 7-layer bean-dip of SSH Authentication looks like this:
 * Changing the Default Port.
 * Fail2Ban
 * 2FA
-* Bastion Host(s) with session logging
+* Bastion Host(s) with session logging. (Tlog?)
 * Creating an SSH Certificate Authority to centralize & automate keypairs.
-* Adding things like a `MOTD` banner will make lawyers happy as well.
-
----
-
-# Recovery/Break Glass of remote hosts.
-
-* `/usr/sbin/sshd -D -p 2222` --> This will spawn a new SSH Daemon Process on the specified port to act as a recovery in case a remote shell is terminated, so long as the parent process stays alive.
-
-* Absolute Break Glass (modifying broken `sshd.conf`, etc.)
-    + Bring down `EC2` Instance,
-    + Disconnect the `rootfs`
-    + Mount the `rootfs` to another `EC2`.
-    + Edit what you need. Follow steps in reverse.
-
----
+* Adding things like a `MOTD` banner will do nothing pragmatic - but it makes your lawyers happy - so idfk. `¯\_(ツ)_/¯`
