@@ -3,9 +3,11 @@
 # SSH
 
 `sudo sshd -t`
+
 * Test the `sshd_config` file for errors before reloading / restarting the service.
 
 `/usr/sbin/sshd -D -p 2222`
+
 * Create a new `ssh` instance in the foreground on a separate port as a failsafe shell. (like when editing `/etc/ssh/sshd_config`)
 
 * Rsync + SSH

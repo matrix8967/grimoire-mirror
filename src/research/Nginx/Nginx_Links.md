@@ -32,7 +32,6 @@ https://nuxtjs.org/faq/nginx-proxy
 https://www.nginx.com/blog/nginx-caching-guide
 https://enable-cors.org/server_nginx.html
 https://cyberciti.biz/faq/linux-unix-nginx-access-file-log-real-ip-address-of-visitor
-
 https://github.com/rekby/lets-proxy2
 
 # Config_Halp

@@ -10,8 +10,11 @@ useradd --create-home --groups sudo,adm $USER
 ```
 
 ```
+
 # For Switch Homebrew UDEV Rules:
+
 `sudo usermod -a -G nintendo_switch $USER`
+
 ```
 
 `https://wiki.archlinux.org/title/Users_and_groups#User_management`
