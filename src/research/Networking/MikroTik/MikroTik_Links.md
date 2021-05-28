@@ -1,23 +1,22 @@
-`https://mikrotik.com/download`
-`https://help.mikrotik.com/docs/collector/pages.action?key=ROS`
+* `https://mikrotik.com/download`
+* `https://help.mikrotik.com/docs/collector/pages.action?key=ROS`
 
 # KVM/QEmu
-`https://help.mikrotik.com/docs/display/ROS/CHR+ProxMox+installation`
-`https://help.mikrotik.com/docs/pages/viewpage.action?pageId=18350234`
+* `https://help.mikrotik.com/docs/display/ROS/CHR+ProxMox+installation`
+* `https://help.mikrotik.com/docs/pages/viewpage.action?pageId=18350234`
 
 # RouterOS License -
-`https://help.mikrotik.com/docs/display/ROS/RouterOS+license+keys`
-`/system license print`
+* `https://help.mikrotik.com/docs/display/ROS/RouterOS+license+keys/system license print`
 
 # CLI Ref
-`https://help.mikrotik.com/docs/display/ROS/Console`
-`https://help.mikrotik.com/docs/display/ROS/Command+Line+Interface`
+* `https://help.mikrotik.com/docs/display/ROS/Console`
+* `https://help.mikrotik.com/docs/display/ROS/Command+Line+Interface`
 
 ## Serial
-`https://help.mikrotik.com/docs/display/ROS/Serial+Console`
+* `https://help.mikrotik.com/docs/display/ROS/Serial+Console`
 
-`https://wiki.mikrotik.com/wiki/Manual:Securing_Your_Router`
-`https://blog.mikrotik.com/`
+* `https://wiki.mikrotik.com/wiki/Manual:Securing_Your_Router`
+* `https://blog.mikrotik.com/`
 
 `https://old.reddit.com/r/mikrotik/comments/ja5bjl/how_mikrotik_uses_switch_chips_to_create_router/`
 
