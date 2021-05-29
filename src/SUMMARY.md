@@ -4,21 +4,21 @@
 
 # Configs
 
-  - [Caddy](Configs/Caddy.conf)
+  - [Caddy](Configs/Caddy_conf.md)
   - [EdgeRouter](Configs/EdgeRouter_Universal_Setup.md)
-  - [Kitty](Configs/kitty.conf)
+  - [Kitty](Configs/kitty_conf.md)
 
-# Quick Refs
+# Copy Pasta
 
-  - [CIDR](Quick_Refs/CIDR_Subnets.md)
-  - [DB9_Reference](Quick_Refs/DB9_Ref.md)
-  - [MacOS](Quick_Refs/MacOS.md)
-  - [NGINX_Ref](Quick_Refs/NGINX_Ref.sh)
-  - [Netstat](Quick_Refs/Netstat_Ref.md)
-  - [SSH_Ref](Quick_Refs/SSH_Ref.md)
-  - [Storage_Ref](Quick_Refs/Storage_Ref.md)
-  - [User_Groups](Quick_Refs/Users_Groups.md)
-  - [PS_Ref](Quick_Refs/ps_Ref.md)
+  - [CIDR](Copy_Pasta/CIDR_Subnets.md)
+  - [DB9_Reference](Copy_Pasta/DB9_Ref.md)
+  - [MacOS](Copy_Pasta/MacOS.md)
+  - [NGINX_Ref](Copy_Pasta/NGINX_Ref.sh)
+  - [Netstat](Copy_Pasta/Netstat_Ref.md)
+  - [SSH_Ref](Copy_Pasta/SSH_Ref.md)
+  - [Storage_Ref](Copy_Pasta/Storage_Ref.md)
+  - [User_Groups](Copy_Pasta/Users_Groups.md)
+  - [PS_Ref](Copy_Pasta/ps_Ref.md)
 
 # Word Bench
 
@@ -40,7 +40,6 @@
   - [K8s_links](research/Containers/k8s/K8s_links.md)
   - [Ansible_Networking](research/Networking/Ansible_Networking.md)
   - [Fail2Ban](research/Networking/Fail2Ban.md)
-  - [HP_Procurve_Links](research/Networking/HP_Procurve/HP_Procurve_Links.md)
   - [MikroTik_Links](research/Networking/MikroTik/MikroTik_Links.md)
 
 # Monitoring & Logging
@@ -62,5 +61,3 @@
 # SSH
 
   - [SSH_Links](research/SSH/SSH_Links.md)
-
-# Apple

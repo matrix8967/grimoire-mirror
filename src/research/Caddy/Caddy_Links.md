@@ -8,8 +8,8 @@ https://caddyserver.com/docs/
 # /etc/caddy/Caddyfile
 
 ```
-start.alexmorris.dev {
-        reverse_proxy 45.33.127.233
+$INGRESS_URL {
+        reverse_proxy $IP_of_backend
         log {
                 output file /var/log/caddy/start.alexmorris.dev.access.log {
                         roll_size 1gb

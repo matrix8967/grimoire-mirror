@@ -57,6 +57,6 @@
 ----
 
 
-`ssh-keygen -t rsa -b 4096 -C "user@garyhost" -f ~/.ssh/example_01`
+`ssh-keygen -t rsa -b 4096 -C "user@hostname" -f ~/.ssh/example_01`
 
 `ssh-copy-id -i ~/.ssh/example_01.pub`

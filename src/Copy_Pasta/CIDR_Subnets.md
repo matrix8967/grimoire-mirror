@@ -8,6 +8,7 @@ A way of defining a subnet and its size with a "mask", a smaller mask = more add
     10.0.0.1/8 (16,777,216 ips from 10.0.0.0 - 10.255.255.255) netmask = 255.0.0.0
     0.0.0.1/0 (4,294,967,296 ips from 0.0.0.0 - 255.255.255.255) netmask = 0.0.0.0
 
+# *nix packages for subnet math:
 `sipcalc` // `ipcalc`
 
 
