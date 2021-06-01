@@ -1,4 +1,4 @@
-* Use `screen` or `minicom` instead of a general `tty` to interact with a `DB-9`/`rollover` cable.
+<!-- Use `screen` or `minicom` instead of system's `shell` to interact with a `DB-9`/`rollover`/`console` cable. -->
 
 # Screen
 
@@ -8,19 +8,19 @@
 `screen -r session_name`
 `screen -X -S session_name quit`
 
-    Baud rate: 115200
-    Data bits: 8
-    Parity: NONE
-    Stop bits: 1
-    Flow control: NONE
-
 # Minicom
 
 `sudo usermod -a -G dialout $(whoami)`
 `minicom -c on -C ~/minicom.log`
 
-## catch `stdout/stderr`
-`sudo cat /dev/ttyUSB0 > output.log`
+Either `minicom` or `screen` can be used to interact with equipment over a `DB-9` Cable.
 
-## Serial USB Info
-`udevadm info -a -p  $(udevadm info -q path -n /dev/ttyUSB0)`
+The specific settings to establish a connection with [most] Ubitiquiti equipment is below.
+
+```
+    Baud rate: 115200
+    Data bits: 8
+    Parity: NONE
+    Stop bits: 1
+    Flow control: NONE
+```

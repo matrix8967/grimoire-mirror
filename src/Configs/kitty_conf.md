@@ -57,7 +57,6 @@ tab_bar_edge bottom
 tab_bar_style powerline
 tab_powerline_style angled
 
-#active_tab_foreground   #f8f8f2
 active_tab_foreground 	#1e1f28
 active_tab_background   #50fa7b
 active_tab_font_style   bold-italic
