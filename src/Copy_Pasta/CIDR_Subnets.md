@@ -2,14 +2,12 @@
 
 A way of defining a subnet and its size with a "mask", a smaller mask = more address bits usable by the subnet & more IPs in the range. Most common ones:
 
+
     10.0.0.1/32 (a single IP address, 10.0.0.1) netmask = 255.255.255.255
     10.0.0.1/24 (255 ips from 10.0.0.1-255) netmask = 255.255.255.0
     10.0.0.1/16 (65,536 ips from 10.0.0.0 - 10.0.255.255) netmask = 255.255.0.0
     10.0.0.1/8 (16,777,216 ips from 10.0.0.0 - 10.255.255.255) netmask = 255.0.0.0
     0.0.0.1/0 (4,294,967,296 ips from 0.0.0.0 - 255.255.255.255) netmask = 0.0.0.0
-
-# *nix packages for subnet math:
-`sipcalc` // `ipcalc`
 
 
 ```
@@ -31,3 +29,5 @@ A way of defining a subnet and its size with a "mask", a smaller mask = more add
     /17     32768   255.255.128.0
     /16     65536   255.255.0.0
 ```
+
+On most `*nix` OS - the packages `ipcalc` and `sipcalc` make for a quick-and-dirty subnet calculator.
