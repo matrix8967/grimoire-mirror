@@ -1,3 +1,4 @@
+```sh
 #!/usr/bin/env bash
 set -eE
 
@@ -56,3 +57,4 @@ grep $c_date /var/log/nginx/access.log |cut -d \" -f 4 |sort |uniq -c |sort -rh 
 echo -e "-----"
 echo -e "Top 20 webserver requests today:"
 grep "$c_date" /var/log/nginx/access.log |cut -d \" -f 2 |sort |uniq -c |sort -rh |head -20
+```
