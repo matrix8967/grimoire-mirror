@@ -1,6 +1,8 @@
+# DB9/Serial/Rollover Cable Configuration
+
 <!-- Use `screen` or `minicom` instead of system's `shell` to interact with a `DB-9`/`rollover`/`console` cable. -->
 
-# Screen
+### Screen
 
 * `screen -dmLS session_name /dev/ttyUSB0 115200,cs8`
   - `-d` -- detatch session.
@@ -14,7 +16,7 @@
 * `screen -X -S session_name quit`
   - `-X` -- Execute a command on a session.
 
-# Minicom
+### Minicom
 
 * `sudo usermod -a -G dialout $(whoami)`
   - Users must be added to the `dialout` user group.
@@ -24,6 +26,10 @@
   - `-C file_path.log` Capture a log of the session to the specified file path.
 
 Either `minicom` or `screen` can be used to interact with equipment over a `DB-9` Cable.
+
+-----
+
+### Edgerouter / Edgeswitch Serial Config
 
 The specific settings to establish a connection with [most] Ubitiquiti equipment is below.
 

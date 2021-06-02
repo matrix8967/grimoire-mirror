@@ -1,3 +1,12 @@
+# Nginx
+
+
+## `nginx.sh`
+
+This script can be copied wholesale and made to run once to get a quick look at some `nginx` stats without having to call up `goaccess` or hammer a (possibly volatile) CPU with other tools. It uses the `ccze` package to help readability, but it can be ommited if needed.
+
+It may also need to be adjusted depending on if you're logging failures to another log - i.e. `/var/log/nginx/error.log`
+
 ```sh
 #!/usr/bin/env bash
 set -eE
@@ -16,7 +25,7 @@ c_date=$(date -u +"%d/%b/%Y")
 
 echo -e "-----"
 echo -e "Number of 444 Disconnects:"
-grep "$c_date" /var/log/nginx/goaccess.log |grep "\" 444 " |wc -l
+grep "$c_date" /var/log/nginx/access.log |grep "\" 444 " |wc -l
 
 # Number of 404s:
 echo -e "-----"

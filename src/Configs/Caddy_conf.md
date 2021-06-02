@@ -1,4 +1,5 @@
 # Caddy
+
 ### Reverse Proxy Redirection to Internal Site
 
 `Caddy` is a powerful webserver that simplifies many of the most common usecases for other webservers like `nginx`.

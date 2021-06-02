@@ -1,4 +1,6 @@
-# WIP
+# PS Reference
+
+### ps
 
 The `ps` command is generally an underutilized asset when getting information quickly.
 

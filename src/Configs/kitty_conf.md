@@ -1,3 +1,15 @@
+# Kitty 😼️
+
+Kitty is an incredibly versatile `GPU` enhanced *Terminal Emulator* with too many useful features to list here.
+
+It's worth going to [Kitty's Docs](https://sw.kovidgoyal.net/kitty/conf.html) and reading through the features of the `config` file yourself - but these are some adjustments I've made over the years of tweaking my config as both `Kitty` and I grow.
+
+It's developed and maintained by [Kovid Goyal](https://github.com/kovidgoyal) who maintains _another_ extremely popular opensource App: `Calibre.` 🤯️
+
+[Kitty Source](https://github.com/kovidgoyal/kitty)
+
+### kitty.conf
+
 ```
 # 	===== Themes ===== 	#
 
