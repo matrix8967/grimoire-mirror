@@ -25,25 +25,6 @@ plugins=(archlinux extract encode64 gnu-utils golang history-substring-search ip
 
 source $ZSH/oh-my-zsh.sh
 
-# =====ZSH===== #
-
-# change suggestion color
-# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=3"
-
-# enable completion features
-autoload -Uz compinit compinit -d ~/.cache/zcompdump
-zstyle ':completion:*:*:*:*:*' menu select
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' # case insensitive tab completion
-
-# History configurations
-HISTFILE=~/.zsh_history
-#HISTSIZE=1000
-#SAVEHIST=2000
-setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
-setopt hist_ignore_dups       # ignore duplicated commands history list
-setopt hist_ignore_space      # ignore commands that start with space
-setopt hist_verify            # show command with history expansion to user before running it
-
 # =====GoLang===== #
 
 export GOPATH=/home/$USER/Git/Misc/Go/
@@ -69,6 +50,24 @@ compinit
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
 
+# =====Zsh Opts===== #
+
+# enable completion features
+autoload -Uz compinit
+compinit -d ~/.cache/zcompdump
+zstyle ':completion:*:*:*:*:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' # case insensitive tab completion
+
+setopt appendhistory
+setopt histignorealldups
+setopt HIST_SAVE_NO_DUPS
+setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
+setopt hist_ignore_dups       # ignore duplicated commands history list
+setopt hist_ignore_space      # ignore commands that start with space
+setopt hist_verify            # show command with history expansion to user before running it
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
+
 # =====Aliases===== #
 
 alias nano='vim'
@@ -80,14 +79,19 @@ alias lt='ls --tree'
 alias icat='kitty +kitten icat'
 alias dm='sudo dmesg -HTL'
 alias ls='lsd'
-alias bat='batcat'
+#alias bat='batcat'
 alias rsync='rsync -azvhP -r --info=progress2'
 alias rsyncssh='rsync -e ssh'
 alias pubkey='cat ~/.ssh/id_rsa.pub'
 alias ipa='ip -color -brief -human addr'
 alias http='http --check-status --pretty=all --verbose'
+alias netstat_def='sudo netstat -tlnp'
 
 # =====Functions===== #
+
+function pvpn {
+        sudo protonvpn c -f
+}
 
 function amimullvad {
 	curl https://am.i.mullvad.net/connected
@@ -107,10 +111,6 @@ function ElecomDeftPro {
 
 function ElecomEX-GPro {
 	~/Scripts/./ElecomEX-GPro.sh
-}
-
-function pvpn {
-	sudo protonvpn c -f
 }
 
 function hs {
