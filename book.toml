@@ -3,7 +3,7 @@ authors = ["matrix8967"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Grimoire"
+title = "The Grimoire"
 description = "history > Grimoire.md"
 
 [output.html]
@@ -11,6 +11,7 @@ default-theme = "navy"
 git-repository-url = "https://gitlab.com/matrix8967/grimoire"
 git-repository-icon = "fa-gitlab"
 cname = "grimoire.mainframe.computer"
+cname = "grimoire.heretic.dev"
 
 [output.html.print]
 enable = false
