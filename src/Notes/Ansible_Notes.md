@@ -20,7 +20,8 @@
 -   Ping all hosts.
 
 `ansible-doc -l`
-	\* List Available Modules.
+
+-   List Available Modules.
 
 `http://docs.ansible.com/ansible/latest/modules_by_category.html`
 

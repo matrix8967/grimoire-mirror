@@ -35,26 +35,29 @@
 # Links
 
 -   [Links](Links/README.md)
-  - [Ansible](Ansible/README.md)
-    - [Ansible_Links](Links/Ansible/Ansible_Links.md)
-    - [Ansible_Networking_Links](Links/Ansible/Ansible_Networking_Links.md)
-    -   [Networking](Links/Networking/README.md)
-        -   [Ubiquiti](Links/Networking/Ubiquiti.md)
-    -   [Nginx](Links/Nginx/README.md)
-        -   [Nginx_Links](Links/Nginx/Nginx_Links.md)
-    -   [SSH](Links/SSH/README.md)
-        -   [SSH_Links](Links/SSH/SSH_Links.md)
-    -   [Misc](Links/Misc/README.md)
-        -   [Apple_Links](Links/Misc/Apple_Links.md)
+    -   [Ansible](Links/Ansible/README.md)
+        -   [Ansible_Links](Links/Ansible/Ansible_Links.md)
+        -   [Ansible_Networking_Links](Links/Ansible/Ansible_Networking_Links.md)
+        -   [Networking](Links/Networking/README.md)
+            -   [Ubiquiti](Links/Networking/Ubiquiti.md)
+        -   [Nginx](Links/Nginx/README.md)
+            -   [Nginx_Links](Links/Nginx/Nginx_Links.md)
+        -   [SSH](Links/SSH/README.md)
+            -   [SSH_Links](Links/SSH/SSH_Links.md)
+        -   [Misc](Links/Misc/README.md)
+            -   [Apple_Links](Links/Misc/Apple_Links.md)
 
 * * *
 
 # Notes
 
 -   [Notes](Notes/README.md)
+    - [Ansible_Notes](Notes/Ansible_Notes.md)
     -   [Networking](Notes/Networking/README.md)
         -   [Networking_Notes](Notes/Networking/Networking_Notes.md)
     -   [Nginx](Notes/Nginx/README.md)
         -   [Nginx_Links](Notes/Nginx/Nginx_Links.md)
     -   [SSH](Notes/SSH/README.md)
         -   [SSH_Notes](Notes/SSH/SSH_Notes.md)
+    -   [Misc](Notes/Misc/README.md)
+        -   [Apple_Notes](Notes/Misc/Apple_Notes.md)
