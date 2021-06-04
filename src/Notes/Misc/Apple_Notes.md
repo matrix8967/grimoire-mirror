@@ -7,6 +7,8 @@
 -   <https://kean.blog/pulse/home>
     -   <https://github.com/kean/Pulse>
 
+### Avahi Daemon
+
 ```bash
 # Disable
 sudo defaults write /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist ProgramArguments -array-add "-NoMulticastAdvertisements"
@@ -15,44 +17,55 @@ sudo defaults write /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist 
 sudo defaults write /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist ProgramArguments -array "/usr/sbin/mDNSResponder" "-launchd"
 ```
 
-`sudo ipconfig set en0 DHCP`
+---
 
--   Renew DHCP Lease.
+* `sudo ipconfig set en0 DHCP`
 
-`sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder`
+  - Renew DHCP Lease.
 
--   Clear DNS Cache.
+---
 
+* `sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder`
 
-`/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'`
+  - Clear DNS Cache.
 
--   Show current `SSID`.
+---
 
-`defaults read /Library/Preferences/SystemConfiguration/com.apple.airport.preferences | grep LastConnected -A 7`
+* `/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'`
 
--   Show Connection History.
+  - Show current `SSID`.
 
-`security find-generic-password -D "AirPort network password" -a "SSID" -gw`
+---
 
--   Show SSID Passwords.
+* `defaults read /Library/Preferences/SystemConfiguration/com.apple.airport.preferences | grep LastConnected -A 7`
 
-`networksetup -setairportpower en0 on`
+  - Show Connection History.
 
--   Turn on wifi Adapter.
+---
+
+* `security find-generic-password -D "AirPort network password" -a "SSID" -gw`
+
+* -   Show SSID Passwords.
+
+---
+
+* `networksetup -setairportpower en0 on`
+
+  - Turn on wifi Adapter.
 
 ## Filevault
 
-`sudo fdesetup status`
+* `sudo fdesetup status`
 
--   Filevault Status.
+  - Filevault Status.
 
-`sudo fdesetup enable`
+* `sudo fdesetup enable`
 
--   Filevault Enable.
+  - Filevault Enable.
 
-`sudo sysdiagnose -f ~/Desktop/`
+* `sudo sysdiagnose -f ~/Desktop/`
 
--   Run performance / diagnostic and place results on the Desktop.
+  - Run performance / diagnostic and place results on the Desktop.
 
 ## Bootable USB Installer:
 

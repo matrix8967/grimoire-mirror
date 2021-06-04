@@ -10,6 +10,7 @@
     -   [Kitty](Configs/kitty_conf.md)
     -   [Minicom](Configs/minicom_conf.md)
     -   [Terminal](Configs/Terminal/README.md)
+        -   [bat](Configs/Terminal/bat_config.md)
         -   [P10K](Configs/Terminal/p10k.md)
         -   [Tmux](Configs/Terminal/tmux_conf.md)
         -   [Vim](Configs/Terminal/vimrc.md)
@@ -52,11 +53,11 @@
 # Notes
 
 -   [Notes](Notes/README.md)
-    - [Ansible_Notes](Notes/Ansible_Notes.md)
+    -   [Ansible_Notes](Notes/Ansible_Notes.md)
     -   [Networking](Notes/Networking/README.md)
         -   [Networking_Notes](Notes/Networking/Networking_Notes.md)
     -   [Nginx](Notes/Nginx/README.md)
-        -   [Nginx_Links](Notes/Nginx/Nginx_Links.md)
+        -   [Nginx_Links](Notes/Nginx/Nginx_Notes.md)
     -   [SSH](Notes/SSH/README.md)
         -   [SSH_Notes](Notes/SSH/SSH_Notes.md)
     -   [Misc](Notes/Misc/README.md)
