@@ -17,55 +17,55 @@ sudo defaults write /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist 
 sudo defaults write /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist ProgramArguments -array "/usr/sbin/mDNSResponder" "-launchd"
 ```
 
----
+* * *
 
-* `sudo ipconfig set en0 DHCP`
+-   `sudo ipconfig set en0 DHCP`
 
-  - Renew DHCP Lease.
+    -   Renew DHCP Lease.
 
----
+* * *
 
-* `sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder`
+-   `sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder`
 
-  - Clear DNS Cache.
+    -   Clear DNS Cache.
 
----
+* * *
 
-* `/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'`
+-   `/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'`
 
-  - Show current `SSID`.
+    -   Show current `SSID`.
 
----
+* * *
 
-* `defaults read /Library/Preferences/SystemConfiguration/com.apple.airport.preferences | grep LastConnected -A 7`
+-   `defaults read /Library/Preferences/SystemConfiguration/com.apple.airport.preferences | grep LastConnected -A 7`
 
-  - Show Connection History.
+    -   Show Connection History.
 
----
+* * *
 
-* `security find-generic-password -D "AirPort network password" -a "SSID" -gw`
+-   `security find-generic-password -D "AirPort network password" -a "SSID" -gw`
 
-* -   Show SSID Passwords.
+-   -   Show SSID Passwords.
 
----
+* * *
 
-* `networksetup -setairportpower en0 on`
+-   `networksetup -setairportpower en0 on`
 
-  - Turn on wifi Adapter.
+    -   Turn on wifi Adapter.
 
 ## Filevault
 
-* `sudo fdesetup status`
+-   `sudo fdesetup status`
 
-  - Filevault Status.
+    -   Filevault Status.
 
-* `sudo fdesetup enable`
+-   `sudo fdesetup enable`
 
-  - Filevault Enable.
+    -   Filevault Enable.
 
-* `sudo sysdiagnose -f ~/Desktop/`
+-   `sudo sysdiagnose -f ~/Desktop/`
 
-  - Run performance / diagnostic and place results on the Desktop.
+    -   Run performance / diagnostic and place results on the Desktop.
 
 ## Bootable USB Installer:
 
