@@ -37,7 +37,7 @@
 # Notes
 
 -   [Notes](Notes/README.md)
-    -   [Ansible_Notes](Notes/Ansible/README.md)
+    -   [Ansible](Notes/Ansible/README.md)
         -   [Ansible_Links](Notes/Ansible/Ansible_Links.md)
         -   [Ansible_Notes](Notes/Ansible/Ansible_Notes.md)
         -   [Ansible_Networking_Links](Notes/Ansible/Ansible_Networking_Links.md)
