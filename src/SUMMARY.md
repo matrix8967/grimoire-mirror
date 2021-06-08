@@ -45,6 +45,7 @@
         -   [Ansible_Networking_Links](Notes/Ansible/Ansible_Networking_Links.md)
     -   [Networking](Notes/Networking/README.md)
         -   [Networking_Notes](Notes/Networking/Networking_Notes.md)
+        -   [Proxies](Notes/Networking/Proxy_Notes.md)
         -   [Ubiquiti_Links](Notes/Networking/Ubiquiti.md)
     -   [Nginx](Notes/Nginx/README.md)
         -   [Nginx_Notes](Notes/Nginx/Nginx_Notes.md)
