@@ -3,7 +3,7 @@ authors = ["matrix8967"]
 language = "en"
 multilingual = false
 src = "src"
-title = "The Grimoire"
+title = "The Grimoire 📖"
 description = "history > Grimoire.md"
 
 [output.html]

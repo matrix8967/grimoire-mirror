@@ -25,6 +25,10 @@ plugins=(archlinux extract encode64 gnu-utils golang history-substring-search ip
 
 source $ZSH/oh-my-zsh.sh
 
+# =====MOTD===== #
+
+# cat .ASCII/dontpanic.txt |lolcat && figlet -w 100 -l -k -f Bloody "Don't Panic!" | lolcat
+
 # =====GoLang===== #
 
 export GOPATH=/home/$USER/Git/Misc/Go/
@@ -42,6 +46,10 @@ export PATH=$HOME/.gems/bin:$PATH
 # =====Rust===== #
 
 export PATH=$PATH:~/.cargo/bin/
+
+# =====Editor===== #
+
+export EDITOR="/usr/bin/vim"
 
 # =====Kitty Config===== #
 
@@ -72,20 +80,22 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
 
 alias nano='vim'
 alias pls='sudo'
+#alias bat='batcat'
+alias ls='lsd'
 alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 alias icat='kitty +kitten icat'
 alias dm='sudo dmesg -HTL'
-alias ls='lsd'
-#alias bat='batcat'
-alias rsync='rsync -azvhP -r --info=progress2'
-alias rsyncssh='rsync -e ssh'
 alias pubkey='cat ~/.ssh/id_rsa.pub'
 alias ipa='ip -color -brief -human addr'
 alias http='http --check-status --pretty=all --verbose'
 alias netstat_def='sudo netstat -tlnp'
+alias rsync='rsync -azvhP -r --info=progress2'
+alias rsyncssh='rsync -e ssh'
+alias cp='rsync -azvhP'
+
 
 # =====Functions===== #
 
