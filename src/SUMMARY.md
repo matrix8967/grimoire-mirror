@@ -16,6 +16,7 @@
         -   [Vim](Configs/Terminal/vimrc.md)
         -   [ZSH](Configs/Terminal/zshrc.md)
     -   [ASCII](Configs/Terminal/ASCII/README.md)
+        <!-- -   [Anime](Configs/Terminal/ASCII/Anime.md) -->
         -   [Mainframe.computer](Configs/Terminal/ASCII/Mainframe_Animated.md)
         -   [Pika](Configs/Terminal/ASCII/pika_full.md)
         -   [SBob](Configs/Terminal/ASCII/Sbob.md)
