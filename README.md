@@ -1,4 +1,4 @@
-# grimoire.mainframe.computer
+# `https://grimoire.heretic.dev/`
 
 Mostly technical garbage and notes for now.
 
