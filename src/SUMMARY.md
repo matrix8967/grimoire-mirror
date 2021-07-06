@@ -29,6 +29,7 @@
 -   [Copy_Pasta](Copy_Pasta/README.md)
     -   [CIDR](Copy_Pasta/CIDR_Subnets.md)
     -   [DB9_Reference](Copy_Pasta/DB9_Ref.md)
+    -   [DNS](Copy_Pasta/DNS.md)
     -   [MacOS](Copy_Pasta/MacOS.md)
     -   [NGINX_Ref](Copy_Pasta/NGINX_Ref.md)
     -   [Netstat](Copy_Pasta/Netstat_Ref.md)
