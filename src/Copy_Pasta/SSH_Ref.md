@@ -12,21 +12,6 @@
 
 * * *
 
-### Rsync
-
-`rsync -rauLvhP`
-
--   `r` = Recursive
--   `a` = Archive
--   `z` = Compressed (zipped)
--   `u` = Ignore Unless Newer.
--   `L` = Preserve soft links.
--   `v` = verbose
--   `h` = Human Readable
--   `P` = Progress
-
-* * *
-
 ### 2FA for SSH
 
 -   WIP
