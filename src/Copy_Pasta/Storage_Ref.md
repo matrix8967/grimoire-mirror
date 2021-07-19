@@ -1,15 +1,5 @@
 # Filesystem / Storage Info
 
-### tar
-
-`tar -czvf Volume-Name.tar.gz /path/to/directory-or-file`
-
--   Compress Directory into `.tar.gz` extension.
--   `-c` - Create new archive.
--   `-z` - `gzip`.
--   `-v` - Create with `Volume-Name`.
--   `-f` - Specify Archive File/Device.
-
 -----
 
 ### find
@@ -40,25 +30,25 @@
 
 `ls -altr`
 
--   `-C` - list entries by columns.
+-   `C` - list entries by columns.
 
--   `-ult` - sort  by, and show, access time.
+-   `ult` - sort  by, and show, access time.
 
--   `-t` - Sort by modification time, newest first.
+-   `t` - Sort by modification time, newest first.
 
--   `-r` - Reverse order while sorting.
+-   `r` - Reverse order while sorting.
 
--   `-l` - Use a long listing format.
+-   `l` - Use a long listing format.
 
--   `-d` - List directories, not their contents.
+-   `d` - List directories, not their contents.
 
--   `-g` - Similar to `-l`, but w/o `Owner.`
+-   `g` - Similar to `-l`, but w/o `Owner.`
 
--   `-R` - List subdirectories recursively.
+-   `R` - List subdirectories recursively.
 
--   `-G` - Don't print group names.
+-   `G` - Don't print group names.
 
--   `-i` - Print the index number of each file (inode).
+-   `i` - Print the index number of each file (inode).
 
 -----
 
@@ -66,15 +56,15 @@
 
 `tree -aCDAh --du`
 
--   `-a` - Show all files.
+-   `a` - Show all files.
 
--   `-C` - Colorization on.
+-   `C` - Colorization on.
 
--   `-D` - Last modification date.
+-   `D` - Last modification date.
 
--   `-A` - Use ANSI line graphics.
+-   `A` - Use ANSI line graphics.
 
--   `-h` - Human readable file sizes.
+-   `h` - Human readable file sizes.
 
 -   `--du` - Directory sizes.
 

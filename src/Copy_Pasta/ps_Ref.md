@@ -13,5 +13,5 @@ A useful alias to start with is:
 -   `f` - shows process heirarchy.
 -   `a` - include processes belonging to other users.
 
--   `-e` - every process.
--   `-o` - specify output fields.
+-   `e` - every process.
+-   `o` - specify output fields.
