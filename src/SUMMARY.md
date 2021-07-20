@@ -30,13 +30,12 @@
     -   [CIDR](Copy_Pasta/CIDR_Subnets.md)
     -   [DB9_Reference](Copy_Pasta/DB9_Ref.md)
     -   [DNS](Copy_Pasta/DNS.md)
-    -   [File_And_Storage](Copy_Pasta/File_and_Storage.md)
+    -   [Files_And_Storage](Copy_Pasta/Files_and_Storage.md)
     -   [MacOS](Copy_Pasta/MacOS.md)
     -   [NGINX_Ref](Copy_Pasta/NGINX_Ref.md)
     -   [Netstat](Copy_Pasta/Netstat_Ref.md)
     -   [PS_Ref](Copy_Pasta/ps_Ref.md)
     -   [SSH_Ref](Copy_Pasta/SSH_Ref.md)
-    -   [Storage_Ref](Copy_Pasta/Storage_Ref.md)
     -   [User_Groups](Copy_Pasta/Users_Groups.md)
 
 
