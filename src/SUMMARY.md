@@ -19,7 +19,7 @@
         <!-- -   [Anime](Configs/Terminal/ASCII/Anime.md) -->
         -   [Mainframe.computer](Configs/Terminal/ASCII/Mainframe_Animated.md)
         -   [Pika](Configs/Terminal/ASCII/pika_full.md)
-        <!-- -   [SBob](Configs/Terminal/ASCII/Sbob.md) -->
+            <!-- -   [SBob](Configs/Terminal/ASCII/Sbob.md) -->
         -   [Unicode](Configs/Terminal/ASCII/Unicode.md)
 
 * * *
@@ -30,14 +30,13 @@
     -   [CIDR](Copy_Pasta/CIDR_Subnets.md)
     -   [DB9_Reference](Copy_Pasta/DB9_Ref.md)
     -   [DNS](Copy_Pasta/DNS.md)
-    -   [Files_And_Storage](Copy_Pasta/Files_and_Storage.md)
     -   [MacOS](Copy_Pasta/MacOS.md)
     -   [NGINX_Ref](Copy_Pasta/NGINX_Ref.md)
     -   [Netstat](Copy_Pasta/Netstat_Ref.md)
     -   [PS_Ref](Copy_Pasta/ps_Ref.md)
     -   [SSH_Ref](Copy_Pasta/SSH_Ref.md)
+    -   [Storage](Copy_Pasta/Storage.md)
     -   [User_Groups](Copy_Pasta/Users_Groups.md)
-
 
 * * *
 
