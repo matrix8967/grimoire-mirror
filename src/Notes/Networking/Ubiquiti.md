@@ -36,7 +36,7 @@
 
 <https://community.ui.com/releases/WiFiman-Desktop-0-2-2/74d8bc1d-6735-444b-a7fc-0ea2584ccb89> (ded)
 
------
+* * *
 
 # POE
 
@@ -52,7 +52,7 @@
 -   54V Passive PoE Provides 54V power.
 -   On Ubiquiti equipment, 802.3af PoE is often reffered to as 'PoE', whereas 802.3at and 802.3bt are referred to as 'PoE+' and 'PoE++'.
 
------
+* * *
 
 # EdgeRouter
 
@@ -102,7 +102,7 @@
 
 <https://help.ui.com/hc/en-us/articles/360013601733>
 
------
+* * *
 
 # Firewall
 
@@ -130,7 +130,7 @@
 
 <https://help.ui.com/hc/en-us/articles/360019887194-UNMS-v1-Global-Features-for-Networks>
 
------
+* * *
 
 # Performance / Misc
 

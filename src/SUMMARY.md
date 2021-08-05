@@ -17,6 +17,7 @@
         -   [ZSH](Configs/Terminal/zshrc.md)
     -   [ASCII](Configs/Terminal/ASCII/README.md)
         <!-- -   [Anime](Configs/Terminal/ASCII/Anime.md) -->
+        -   [HERETIC](Configs/Terminal/ASCII/HERETIC.md)
         -   [Mainframe.computer](Configs/Terminal/ASCII/Mainframe_Animated.md)
         -   [Pika](Configs/Terminal/ASCII/pika_full.md)
             <!-- -   [SBob](Configs/Terminal/ASCII/Sbob.md) -->
@@ -27,6 +28,7 @@
 # Copy Pasta
 
 -   [Copy_Pasta](Copy_Pasta/README.md)
+    -	[Browser_Plugins](Copy_Pasta/Browsers.md)
     -   [CIDR](Copy_Pasta/CIDR_Subnets.md)
     -   [DB9_Reference](Copy_Pasta/DB9_Ref.md)
     -   [DNS](Copy_Pasta/DNS.md)

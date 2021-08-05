@@ -1,6 +1,6 @@
 # ZSH
 
-```
+```bash
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block, everything else may go below.
@@ -21,13 +21,9 @@ export ZSH="/home/$USER/.oh-my-zsh"
 
 ZSH_THEME=powerlevel10k/powerlevel10k
 
-plugins=(archlinux extract encode64 gnu-utils golang history-substring-search ipfs httpie jira jsontools kate keychain kubectl microk8s minikube nmap osx pass pip pipenv pyenv pylint python rbenv rsync ruby rust safe-paste screen shell-proxy ssh-agent sudo systemadmin systemd taskwarrior terraform themes tmux tmux-cssh tmuxinator torrent urltools vundle yum virtualenv zsh-autosuggestions zsh-syntax-highlighting gpg-agent gem git-extras firewalld docker-compose docker cp cargo bundler ansible adb)
+plugins=(archlinux extract encode64 gnu-utils golang history-substring-search ipfs httpie jira jsontools kate keychain kubectl microk8s minikube nmap osx passpip pipenv pyenv pylint python rbenv rsync ruby rust safe-paste screen shell-proxy ssh-agent sudo systemadmin systemd taskwarrior terraform themes tmux tmux-cssh tmuxinator torrent urltools vundle yum virtualenv zsh-autosuggestions zsh-syntax-highlighting gpg-agent gem git-extras firewalld docker-compose docker cp cargo bundler ansible adb)
 
 source $ZSH/oh-my-zsh.sh
-
-# =====MOTD===== #
-
-# cat .ASCII/dontpanic.txt |lolcat && figlet -w 100 -l -k -f Bloody "Don't Panic!" | lolcat
 
 # =====GoLang===== #
 
@@ -58,6 +54,17 @@ compinit
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
 
+# =====Bat/Man===== #
+
+# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# man 2 select
+# MANROFFOPT="-c"
+
+# =====Docker===== #
+
+export PATH=/usr/bin:$PATH
+export DOCKER_HOST=unix:///run/user/1000/docker.sock
+
 # =====Zsh Opts===== #
 
 # enable completion features
@@ -74,28 +81,25 @@ setopt hist_ignore_dups       # ignore duplicated commands history list
 setopt hist_ignore_space      # ignore commands that start with space
 setopt hist_verify            # show command with history expansion to user before running it
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
+#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=999'
 
 # =====Aliases===== #
 
 alias nano='vim'
 alias pls='sudo'
-#alias bat='batcat'
-alias ls='lsd'
 alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 alias icat='kitty +kitten icat'
 alias dm='sudo dmesg -HTL'
+alias ls='lsd'
+#alias bat='batcat'
 alias pubkey='cat ~/.ssh/id_rsa.pub'
 alias ipa='ip -color -brief -human addr'
 alias http='http --check-status --pretty=all --verbose'
 alias netstat_def='sudo netstat -tlnp'
-alias rsync='rsync -azvhP -r --info=progress2'
-alias rsyncssh='rsync -e ssh'
-alias cp='rsync -azvhP'
-
+alias rsync='rsync -razuvhLP --info=progress2'
 
 # =====Functions===== #
 
@@ -137,6 +141,34 @@ function printline {
 
 function psaux {
 	sudo ps awxf -eo pid,user,%cpu,%mem,args
+}
+
+function Quotes {
+	echo -e "a=7; echo \$a; echo \"\$a\"; echo '\$a'; echo \"'\$a'\"; echo '\"\$a\"'"
+	a=7; echo $a; echo "$a"; echo '$a'; echo "'$a'"; echo '"$a"'
+}
+
+function cpu_temp()
+{
+  # Init result
+  local result=0.00
+  # The first line of this file is x1000.
+  # Read the first line from the file.
+  line=$(head -n 1 /sys/class/thermal/thermal_zone0/temp)
+  # Test if the string is an integer as expected with a regex.
+  if [[ $line =~ ^-?[0-9]+$ ]]
+  then
+    # Convert temp to Celcius & store as string.
+    result=$(awk "BEGIN {printf \"%.2f\n\", $line/1000}")
+  fi
+  # The gud gud. Or maybe bad bad?
+  echo -e "Current CPU Temp is: $result°C"
+}
+
+function Gitlab_Pull {
+    for dir in ~/Git/Gitlab/*/; do
+        git -C $dir pull
+    done
 }
 
 # =====Blur for Kitty Term===== #

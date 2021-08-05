@@ -4,10 +4,10 @@
 
 `sudo netstat -tlnp`
 
--	`t` = `tcp`
+-   `t` = `tcp`
 
--	`l` = `listening sockets`
+-   `l` = `listening sockets`
 
--	`n` = `do not resolve dns to hostnames`
+-   `n` = `do not resolve dns to hostnames`
 
--	`p` = `show process id`
+-   `p` = `show process id`

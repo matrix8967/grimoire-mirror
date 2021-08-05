@@ -2,50 +2,50 @@
 
 ## Resources Straight from the Orchard:
 
-* Apple Preboot Key Combinations / Hot Keys -
+-   Apple Preboot Key Combinations / Hot Keys -
 
-    - `https://support.apple.com/en-us/HT201255`
+    -   `https://support.apple.com/en-us/HT201255`
 
-* Reset SMC Chip -
+-   Reset SMC Chip -
 
-    - `https://support.apple.com/en-us/HT201295`
+    -   `https://support.apple.com/en-us/HT201295`
 
-* Reset PRRAM/NVRAM -
+-   Reset PRRAM/NVRAM -
 
-    - `https://support.apple.com/en-us/HT204063`
+    -   `https://support.apple.com/en-us/HT204063`
 
-* Reinstalling MacOS from Recovery -
+-   Reinstalling MacOS from Recovery -
 
-    - `https://support.apple.com/en-us/HT204904`
+    -   `https://support.apple.com/en-us/HT204904`
 
-* Check Apple Warranty -
+-   Check Apple Warranty -
 
-    - `https://checkcoverage.apple.com/`
+    -   `https://checkcoverage.apple.com/`
 
-* Misc. Support Site:
+-   Misc. Support Site:
 
-    - `https://getsupport.apple.com`
+    -   `https://getsupport.apple.com`
 
------
+* * *
 
 ## MacOS Log Locations:
 
-* System Log Folder
-	* `/var/log`
-* System Log
-	* `/var/log/system.log`
-* Mac Analytics Data
-	* `/var/log/DiagnosticMessages`
-* System Application Logs
-	* `/Library/Logs`
-* System Reports
-	* `/Library/Logs/DiagnosticReports`
-* User Application Logs
-	* `~/Library/Logs`
-* User Reports
-	* `~/Library/Logs/DiagnosticReports`
+-   System Log Folder
+    		\* `/var/log`
+-   System Log
+    		\* `/var/log/system.log`
+-   Mac Analytics Data
+    		\* `/var/log/DiagnosticMessages`
+-   System Application Logs
+    		\* `/Library/Logs`
+-   System Reports
+    		\* `/Library/Logs/DiagnosticReports`
+-   User Application Logs
+    		\* `~/Library/Logs`
+-   User Reports
+    		\* `~/Library/Logs/DiagnosticReports`
 
------
+* * *
 
 ### MacOS Wifi Strength
 
