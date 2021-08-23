@@ -1,3 +1,8 @@
+# Emoticons
+
+`Emoji Version 0.5`.
+
+Useful when you need to express yourself during network turbulance, and can't waste bandwidth on `4mb` gifs.
 
 ```
 (☞ﾟ∀ﾟ)☞
@@ -100,4 +105,15 @@
 ⚅
 
 ⌘
+```
+
+# Boxdrawing:
+
+Helps organize and shape up lists and stuff.
+
+```
+┌── Thing
+│   └─ Thing A
+├─── Thing 01
+└─── Thing 02
 ```
