@@ -1,5 +1,11 @@
 # Nginx
 
+## Nginx Auth User / PW Add
+
+`sudo sh -c "echo -n '$SOME-USERNAME:' >> /etc/nginx/.htpasswd"`
+`sudo sh -c "openssl passwd -apr1 >> /etc/nginx/.htpasswd"`
+
+(☝️ Requires `apache2-utils` Package.)
 
 ## `nginx.sh`
 
