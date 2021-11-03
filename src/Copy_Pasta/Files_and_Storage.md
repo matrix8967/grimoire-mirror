@@ -1,6 +1,6 @@
 # Filesystem / Storage Info
 
------
+* * *
 
 ### find
 
@@ -24,7 +24,7 @@
 
 -   Finds the directory with the highest number of inodes under the current directory.
 
------
+* * *
 
 ### ls
 
@@ -50,7 +50,7 @@
 
 -   `i` - Print the index number of each file (inode).
 
------
+* * *
 
 ### tree
 
@@ -68,7 +68,7 @@
 
 -   `--du` - Directory sizes.
 
------
+* * *
 
 ### du
 
@@ -84,7 +84,7 @@
 
 -   Finds Largest Directories under the current directory for FreeNAS/FreeBSD.
 
------
+* * *
 
 # Rsync
 
@@ -98,23 +98,23 @@
 -   `h` = Human Readable
 -   `P` = Progress
 
------
+* * *
 
 # TAR
 
 `sudo /usr/bin/tar -czpvf /home/$USER/backup/Backup.tar.gz /`
 
--    `c` = Archive.
+-   `c` = Archive.
 
--    `z` =  Use GZip format to backup. GZip is fast but it generates a larger file size than other compression tools.
+-   `z` =  Use GZip format to backup. GZip is fast but it generates a larger file size than other compression tools.
 
--    `p` =  Preserve permission so that when you restore the backup you will not encounter a permission problem.
+-   `p` =  Preserve permission so that when you restore the backup you will not encounter a permission problem.
 
--    `v` =  Show details during backup. Omit -v if you don't want to see verbose output.
+-   `v` =  Show details during backup. Omit -v if you don't want to see verbose output.
 
--    `f` =  Specify where to store the tar files. Here we save the backup file to backup directory under user John's home directory and name it Backup.tar.gz.
+-   `f` =  Specify where to store the tar files. Here we save the backup file to backup directory under user John's home directory and name it Backup.tar.gz.
 
--    `/` = The Linux root file system.
+-   `/` = The Linux root file system.
 
 # Exclusions:
 
@@ -122,19 +122,17 @@
 
 ## tar_exclude.txt
 
-```
-        /home/$USER/backup/*
-        /tmp/*
-        /proc/*
-        /dev/*
-        /sys/*
-        /run/*
-        /var/tmp/*
-        /var/run/*
-        /var/lock/*
-        /usr/portage/*
-        /usr/src/*
-```
+            /home/$USER/backup/*
+            /tmp/*
+            /proc/*
+            /dev/*
+            /sys/*
+            /run/*
+            /var/tmp/*
+            /var/run/*
+            /var/lock/*
+            /usr/portage/*
+            /usr/src/*
 
 # Timestamp Backups:
 

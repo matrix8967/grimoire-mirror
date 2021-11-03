@@ -27,6 +27,8 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'hashivim/vim-terraform'
 Plugin 'cespare/vim-toml'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'gyim/vim-boxdraw'
+Plugin 'isobit/vim-caddyfile'
 
 let g:strip_whitespace_on_save = 1
 let g:strip_whitespace_confirm = 0

@@ -171,6 +171,10 @@ function Gitlab_Pull {
     done
 }
 
+function strip_IPs {
+	sed -E -r 's/(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)/$IP_ADDRESSES/g' $1
+}
+
 # =====Blur for Kitty Term===== #
 
 # if [[ $(ps --no-header -p $PPID -o comm) =~ '^yakuake|kitty$' ]]; then
