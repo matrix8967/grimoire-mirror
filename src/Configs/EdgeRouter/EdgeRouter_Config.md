@@ -262,7 +262,7 @@ service {
                 }
                 static-mapping deadsea {
                     ip-address $IP_ADDRESSES
-                    mac-address dc:a6:32:0a:9a:5a
+                    mac-address $MAC_ADDRESS
                 }
             }
         }

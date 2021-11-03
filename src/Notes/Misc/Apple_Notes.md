@@ -118,4 +118,4 @@ sudo defaults write /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist 
 
 `mdutil -E /path/to/volume`
 
--   Erase & Rebuild `Spotlight` Search.# Apple_Notes
+-   Erase & Rebuild `Spotlight` Search.
