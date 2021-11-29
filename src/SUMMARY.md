@@ -44,6 +44,7 @@
     -   [Storage](Copy_Pasta/Storage.md)
     -   [User_Groups](Copy_Pasta/Users_Groups.md)
     -   [UFW](Copy_Pasta/UFW.md)
+    -   [Windows](Copy_Pasta/Windows.md)
 
 * * *
 
@@ -54,6 +55,8 @@
         -   [Ansible_Links](Notes/Ansible/Ansible_Links.md)
         -   [Ansible_Notes](Notes/Ansible/Ansible_Notes.md)
         -   [Ansible_Networking_Links](Notes/Ansible/Ansible_Networking_Links.md)
+    -   [NetSec](Notes/NetSec/README.md)
+        -   [GHDB](Notes/NetSec/GHDB.md)
     -   [Networking](Notes/Networking/README.md)
         -   [Networking_Notes](Notes/Networking/Networking_Notes.md)
         -   [Proxies](Notes/Networking/Proxy_Notes.md)
