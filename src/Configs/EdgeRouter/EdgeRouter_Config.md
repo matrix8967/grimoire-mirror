@@ -1,6 +1,6 @@
 # EdgeRouter
 
-```json
+```json,editable
 firewall {
     all-ping enable
     broadcast-ping disable

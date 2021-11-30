@@ -1,6 +1,6 @@
 # ZSH
 
-```bash
+```bash,editable
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block, everything else may go below.
@@ -21,7 +21,7 @@ export ZSH="/home/$USER/.oh-my-zsh"
 
 ZSH_THEME=powerlevel10k/powerlevel10k
 
-plugins=(archlinux extract encode64 gnu-utils golang history-substring-search ipfs httpie jira jsontools kate keychain kubectl microk8s minikube nmap osx passpip pipenv pyenv pylint python rbenv rsync ruby rust safe-paste screen shell-proxy ssh-agent sudo systemadmin systemd taskwarrior terraform themes tmux tmux-cssh tmuxinator torrent urltools vundle yum virtualenv zsh-autosuggestions zsh-syntax-highlighting gpg-agent gem git-extras firewalld docker-compose docker cp cargo bundler ansible adb)
+plugins=(archlinux extract encode64 gnu-utils golang history-substring-search ipfs httpie jira jsontools kate keychain kubectl microk8s minikube nmap macos passpip pipenv pyenv pylint python rbenv rsync ruby rust safe-paste screen shell-proxy ssh-agent sudo systemadmin systemd taskwarrior terraform themes tmux tmux-cssh tmuxinator torrent urltools vundle yum virtualenv zsh-autosuggestions zsh-syntax-highlighting gpg-agent gem git-extras firewalld docker-compose docker cp cargo bundler ansible adb)
 
 source $ZSH/oh-my-zsh.sh
 

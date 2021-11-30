@@ -1,5 +1,5 @@
 # EdgeRouter
-```bash
+```bash,editable
 set firewall all-ping enable
 set firewall broadcast-ping disable
 set firewall group network-group LAN_NETWORKS description 'RFC1918 ranges'

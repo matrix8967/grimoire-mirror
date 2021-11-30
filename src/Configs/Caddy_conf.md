@@ -6,7 +6,7 @@
 
 Below is an example of a reverse proxy to an internal machine, while also logging to the `Caddy` host's local `log` directory.
 
-```
+```json,editable
 $DOMAN-NAME {
 
         reverse_proxy $IP-OF-DESTINATION
