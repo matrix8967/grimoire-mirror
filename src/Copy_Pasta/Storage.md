@@ -103,3 +103,22 @@
 _tarfile=/home/$USER/backup/linux_backup-$(date +%F-%H-%M).tar.xz
 sudo /usr/bin/tar --exclude-from=/home/$USER/exclude.txt -cJpvf $ /
 ```
+* * *
+
+## Erasing files & Devices:
+
+### `dd`
+
+`dd if=/dev/zero of=/dev/sdX bs=1M &`
+
+-   `if` = Input File.
+-   `of` = Output File.
+-   `bs` = R/W size in bytes. (Default = 512 bytes.)
+
+### shred
+
+`shred --iterations=35 --verbose --zero --remove {FILE}`
+
+-   `iterations` = number of times to pass over the drive.
+-   `zero` = Overwrite with zeroes
+-   `remove` = Overwrite and remove.

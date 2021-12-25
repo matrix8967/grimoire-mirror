@@ -71,5 +71,6 @@
     -   [Misc](Notes/Misc/README.md)
         -   [Apple_Notes](Notes/Misc/Apple_Notes.md)
         -   [Apple_Links](Notes/Misc/Apple_Links.md)
+        -   [Encyption_Types](Notes/Misc/Encryption_Types.md)
 
 * * *

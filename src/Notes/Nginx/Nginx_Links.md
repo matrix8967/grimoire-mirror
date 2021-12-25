@@ -1,14 +1,14 @@
 # Nginx
 
-`https://luameter.com/`
+<https://luameter.com/>
 
-`https://github.com/auto-ssl/lua-resty-auto-ssl`
+<https://github.com/auto-ssl/lua-resty-auto-ssl>
 
-`https://github.com/kshcherban/acme-nginx`
+<https://github.com/kshcherban/acme-nginx>
 
-`https://nginxproxymanager.com/advanced-config/#custom-nginx-configurations`
+<https://nginxproxymanager.com/advanced-config/#custom-nginx-configurations>
 
-`https://openresty.org/en/using-luarocks.html`
+<https://openresty.org/en/using-luarocks.html>
 
 <https://github.com/agile6v/awesome-nginx>
 
