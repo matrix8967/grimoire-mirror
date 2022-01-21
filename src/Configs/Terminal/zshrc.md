@@ -21,9 +21,13 @@ export ZSH="/home/$USER/.oh-my-zsh"
 
 ZSH_THEME=powerlevel10k/powerlevel10k
 
-plugins=(archlinux extract encode64 gnu-utils golang history-substring-search ipfs httpie jira jsontools kate keychain kubectl microk8s minikube nmap macos passpip pipenv pyenv pylint python rbenv rsync ruby rust safe-paste screen shell-proxy ssh-agent sudo systemadmin systemd taskwarrior terraform themes tmux tmux-cssh tmuxinator torrent urltools vundle yum virtualenv zsh-autosuggestions zsh-syntax-highlighting gpg-agent gem git-extras firewalld docker-compose docker cp cargo bundler ansible adb)
+plugins=(zsh-kitty archlinux extract encode64 gnu-utils golang history-substring-search ipfs httpie jira jsontools kate keychain kubectl microk8s minikube nmap macos pass pip pipenv pyenv pylint python rbenv rsync ruby rust safe-paste screen shell-proxy ssh-agent sudo systemadmin systemd taskwarrior terraform themes tmux tmux-cssh tmuxinator torrent urltools vundle yum virtualenv zsh-autosuggestions zsh-syntax-highlighting gpg-agent gem git-extras firewalld docker-compose docker cp rust bundler ansible adb)
 
 source $ZSH/oh-my-zsh.sh
+
+# =====MOTD===== #
+
+# cat .ASCII/dontpanic.txt |lolcat && figlet -w 100 -l -k -f Bloody "Don't Panic!" | lolcat
 
 # =====GoLang===== #
 
@@ -53,10 +57,11 @@ autoload -Uz compinit
 compinit
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
+# zinit light redxtech/zsh-kitty
 
 # =====Bat/Man===== #
 
-# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # man 2 select
 # MANROFFOPT="-c"
 
@@ -99,7 +104,11 @@ alias pubkey='cat ~/.ssh/id_rsa.pub'
 alias ipa='ip -color -brief -human addr'
 alias http='http --check-status --pretty=all --verbose'
 alias netstat_def='sudo netstat -tlnp'
-alias rsync='rsync -razuvhLP --info=progress2'
+alias rsync='rsync -razuvhLP'
+alias tree='tree -shuC'
+alias wifi_scan='nmcli device wifi list'
+alias cat='bat -pp'
+alias db9='screen -dmLS USG-screen /dev/ttyUSB0 115200,cs8'
 
 # =====Functions===== #
 
@@ -139,6 +148,16 @@ function printline {
 	awk '{print $0; system("sleep .3");}' "$1"
 }
 
+function typer {
+    text="$1"
+    delay="$2"
+
+    for i in $(seq 0 $(expr length "${text}")) ; do
+        echo -n "${text:$i:1}"
+        sleep ${delay}
+    done
+}
+
 function psaux {
 	sudo ps awxf -eo pid,user,%cpu,%mem,args
 }
@@ -166,9 +185,15 @@ function cpu_temp()
 }
 
 function Gitlab_Pull {
-    for dir in ~/Git/Gitlab/*/; do
-        git -C $dir pull
-    done
+	for dir in ~/Git/Gitlab/*/; do
+		git -C $dir pull
+	done
+}
+
+function Github_Pull {
+	for dir in ~/Git/Github/*/; do
+		git -C $dir pull
+	done
 }
 
 function strip_IPs {
