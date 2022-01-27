@@ -19,3 +19,11 @@ From Administrative Powershell:
 -   Windows 10/11 setup and debloat tool.
 
 `https://www.oo-software.com/en/shutup10`
+
+# Active Directory / Windows
+
+<https://ubuntu.com//blog/ubuntu-21-04-is-here>
+<https://github.com/ubuntu/adsys>
+<https://github.com/ubuntu/adsys/tree/main/internal/policies/ad/definitions/policy/Ubuntu/all>
+<https://ubuntu.com/server/docs/service-sssd>
+<https://lzone.de/cheat-sheet/WSL>

@@ -45,13 +45,19 @@ sudo defaults write /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist 
 
 -   `security find-generic-password -D "AirPort network password" -a "SSID" -gw`
 
--   -   Show SSID Passwords.
+    -   Show SSID Passwords.
 
 * * *
 
 -   `networksetup -setairportpower en0 on`
 
     -   Turn on wifi Adapter.
+
+
+-   `while i=1; do echo -ne 'Wifi signal strength:' $(/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | grep CtlRSSI | awk {'print $2'}) '\r'; sleep 0.5; done`
+    -   Measure WiFi Signal Strength.
+
+* * *
 
 ## Filevault
 

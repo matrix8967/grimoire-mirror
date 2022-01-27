@@ -36,7 +36,7 @@
     -   [DB9_Reference](Copy_Pasta/DB9_Ref.md)
     -   [DNS](Copy_Pasta/DNS.md)
     -   [Foremost](Copy_Pasta/Foremost.md)
-    -   [MacOS](Copy_Pasta/MacOS.md)
+        <!---   [MacOS](Copy_Pasta/MacOS.md) -->
     -   [NGINX_Ref](Copy_Pasta/NGINX_Ref.md)
     -   [Netstat](Copy_Pasta/Netstat_Ref.md)
     -   [OSI_Model](Copy_Pasta/OSI.md)
