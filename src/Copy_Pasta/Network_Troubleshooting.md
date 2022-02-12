@@ -5,12 +5,23 @@
 `sudo netstat -tlnp`
 
 -   `t` = `tcp`
-
 -   `l` = `listening sockets`
-
 -   `n` = `do not resolve dns to hostnames`
-
 -   `p` = `show process id`
+
+## SS
+
+`sudo ss -lnmpO`
+
+-   `l` = `Show listening`
+-   `n` = `Numeric. Don't resolve DNS Names.`
+-   `m` = `Memory. Show Socket Memory Usage.`
+-   `p` = `Process. Show Socket Processes.`
+-   `O` = `Print Socket's Data on a single line.`
+
+## Misc Network Monitoring Tools:
+
+`bmon`, `iftop`, `gping`, `wavemon`
 
 * * *
 

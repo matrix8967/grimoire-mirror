@@ -32,7 +32,6 @@
 
 -   [Copy_Pasta](Copy_Pasta/README.md)
     -   [Browser_Plugins](Copy_Pasta/Browsers.md)
-    -   [Foremost](Copy_Pasta/Foremost.md)
     -   [MacOS](Copy_Pasta/MacOS.md)
     -   [Network_Troubleshooting](Copy_Pasta/Network_Troubleshooting.md)
     -   [NGINX_Ref](Copy_Pasta/NGINX_Ref.md)
