@@ -32,7 +32,7 @@ Either `minicom` or `screen` can be used to interact with equipment over a `DB-9
 
 ### Edgerouter / Edgeswitch Serial Config
 
-The specific settings to establish a connection with [most] Ubitiquiti equipment is below.
+The specific settings to establish a connection with most Ubitiquiti equipment is below.
 
         Baud rate: 115200
         Data bits: 8

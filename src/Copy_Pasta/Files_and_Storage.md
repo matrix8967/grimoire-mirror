@@ -140,8 +140,8 @@
 
 # Script:
 
-```bash
-#!bin/sh
-_tarfile=/home/$USER/backup/linux_backup-$(date +%F-%H-%M).tar.xz
+```bash,editable
+#!bin/bash
+tarfile=/home/$USER/backup/linux_backup-$(date +%F-%H-%M).tar.xz
 sudo /usr/bin/tar --exclude-from=/home/$USER/exclude.txt -cJpvf $ /
 ```

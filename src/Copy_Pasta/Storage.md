@@ -100,7 +100,7 @@
 
 ```bash
 #!bin/sh
-_tarfile=/home/$USER/backup/linux_backup-$(date +%F-%H-%M).tar.xz
+tarfile=/home/$USER/backup/linux_backup-$(date +%F-%H-%M).tar.xz
 sudo /usr/bin/tar --exclude-from=/home/$USER/exclude.txt -cJpvf $ /
 ```
 * * *
@@ -122,3 +122,16 @@ sudo /usr/bin/tar --exclude-from=/home/$USER/exclude.txt -cJpvf $ /
 -   `iterations` = number of times to pass over the drive.
 -   `zero` = Overwrite with zeroes
 -   `remove` = Overwrite and remove.
+
+## Recovery
+
+### Foremost
+
+`sudo foremost -a -T -t jpg,bmp,gif,png,avi,mpg -i /dev/sdc`
+
+-   `-a` Enables all write headers -- pushes corrupt files (Usually Windows/NTFS).
+-   `-d` Indirect block detection (Used for *nix systems.)
+-   `-T` Time Stamps the dirs (Prevents overwriting subsequent runs of Foremost.)
+-   `-t` Specify the filetype(s) for recovery.
+-   `-i` Input (The path to the target _device_. i.e. `/dev/sdX`)
+-   `-o` Output (Defaults to Current Dir if unspecified.)
