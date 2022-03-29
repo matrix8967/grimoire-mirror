@@ -1,5 +1,13 @@
 # EdgeRouter
 
+* * *
+
+The default config output for `VyOS` routers is a `json` config file that can be restored from backup via the `CLI`, `WebUI` or from a [Recovery Console](../../Configs/Terminal/Minicom.md) with a [`DB-9/Rollover`](../../Snippets/Network_Troubleshooting.md#db9-serial-cable-recovery) cable if you're having an especially bad time.
+
+Again, this is my default `VyOS` router config with production data replaced with `$VARIABLES`.
+
+* * *
+
 ```json,editable
 firewall {
     all-ping enable

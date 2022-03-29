@@ -26,21 +26,7 @@
             <!-- -   [SBob](Configs/Terminal/ASCII/Sbob.md) -->
         -   [Unicode](Configs/Terminal/ASCII/Unicode.md)
 
-* * *
 
-# Copy Pasta
-
--   [Copy_Pasta](Copy_Pasta/README.md)
-    -   [Browser_Plugins](Copy_Pasta/Browsers.md)
-    -   [MacOS](Copy_Pasta/MacOS.md)
-    -   [Network_Troubleshooting](Copy_Pasta/Network_Troubleshooting.md)
-    -   [NGINX_Ref](Copy_Pasta/NGINX_Ref.md)
-    -   [PS_Ref](Copy_Pasta/ps_Ref.md)
-    -   [SSH_Ref](Copy_Pasta/SSH_Ref.md)
-    -   [Storage](Copy_Pasta/Storage.md)
-    -   [User_Groups](Copy_Pasta/Users_Groups.md)
-    -   [UFW](Copy_Pasta/UFW.md)
-    -   [Windows](Copy_Pasta/Windows.md)
 
 * * *
 
@@ -64,3 +50,17 @@
         -   [SSH_Links](Notes/SSH/SSH_Links.md)
 
 * * *
+
+# Snippets
+
+-   [Snippets](Snippets/README.md)
+    -   [Browser_Plugins](Snippets/Browsers.md)
+    -   [MacOS](Snippets/MacOS.md)
+    -   [Network_Troubleshooting](Snippets/Network_Troubleshooting.md)
+    -   [NGINX_Ref](Snippets/NGINX_Ref.md)
+    -   [PS_Ref](Snippets/ps_Ref.md)
+    -   [SSH_Ref](Snippets/SSH_Ref.md)
+    -   [Storage](Snippets/Storage.md)
+    -   [User_Groups](Snippets/Users_Groups.md)
+    -   [UFW](Snippets/UFW.md)
+    -   [Windows](Snippets/Windows.md)

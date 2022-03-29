@@ -89,7 +89,7 @@ Useful when you need to express yourself during network turbulance, and can't wa
 
 [¬º-°]¬
 
-(•̀ᴗ•́)و ̑̑
+(•̀ᴗ•́)و
 
 (;´༎ຶД༎ຶ`)
 
@@ -105,6 +105,28 @@ Useful when you need to express yourself during network turbulance, and can't wa
 ⚅
 
 ⌘
+
+ *´¨)
+¸.·´¸.·´¨)   ¸.·*¨)
+(¸.·´   (¸.·´  .·´
+              (¸.· ·¸.·´¯`·->
+
+▄█▀▀█▄▄█▀▀█▄▄█▀▀█▄▄█▀▀█▄▄█▀▀█▄▄█▀▀█▄▄█
+
+＼＼      ＿
+　　 ＼(　•_•) F
+　　　 <　⌒ヽ A
+　　　/ 　 へ＼ B
+　　 /　　/　＼＼ U
+　　 |　ノ　　 ヽ_つ L
+　　/　/ O
+　 /　/| U
+　(　(ヽ S
+　|　|、＼
+　| 丿 ＼ ⌒)
+　| |　　) /
+`ノ )　　Lﾉ
+
 ```
 
 # Boxdrawing:

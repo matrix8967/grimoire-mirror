@@ -5,7 +5,7 @@
 -   `terminal length 0`
     -   Removes default CLI paging limit.
 
-## Shell Function to strip `RFC1918` IP Ranges from a file:
+## Shell Function to strip `RFC1918` IP Ranges from a config file:
 
 ```bash
 
@@ -14,6 +14,11 @@ function strip_IPs {
 }
 
 ```
+
+* * *
+
+## Adding Debian Package Repos:
+
 ```bash
 configure
 set system package repository stretch components 'main contrib non-free'

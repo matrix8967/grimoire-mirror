@@ -4,7 +4,7 @@
 
 `Caddy` is a powerful webserver that simplifies many of the most common usecases for other webservers like `nginx`.
 
-Below is an example of a reverse proxy to an internal machine, while also logging to the `Caddy` host's local `log` directory.
+Below is an example of a reverse proxy to an internal machine, while also logging to the `Caddy` host's local `log` directory for testing.
 
 ```json,editable
 $DOMAN-NAME {

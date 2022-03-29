@@ -1,4 +1,13 @@
 # EdgeRouter
+
+* * *
+
+Routers running variants of _VyOS_ can generate a list of `CLI` commands to setup a new or factory reset router to a current configuration state. Very handy as an alternative form of backup and for sanity checking.
+
+Below is my default Router Config, with `$VARIABLES` in place of production data.
+
+* * *
+
 ```bash,editable
 set firewall all-ping enable
 set firewall broadcast-ping disable
@@ -186,3 +195,26 @@ set system traffic-analysis export enable
 set traffic-control optimized-queue policy global
 set traffic-control optimized-queue policy queues
 ```
+
+* * *
+
+These commands configure a new router as such:
+
+-   Establish Firewall Groups for all RFC1918 Local IP Ranges.
+-   Setup IPv6 Firewall Rules allowing Egress traffic while denying Ingress traffic.
+-   Setup a "Guest" Firewall Group.
+-   Configure "Guest" Firewall Group to allow clients to get a DHCP Address and resolve DNS.
+-   Create a `WAN` Ingress Firewall Group.
+-   Drop all incoming traffic.
+-   Configure the `eth0` interface as our `WAN` uplink.
+-   Apply firewall rules to `eth0`.
+-   Configure `eth7` as `LAN` uplink. (`Trunk`.)
+-   Configure `VLAN` Interfaces on `eth7`.
+-   Assign Subnets & Firewall rules to VLANs. (`vif`.)
+-   Enable `Hairpin NAT` & Firewall.
+-   Configure `DHCP` scopes for VLANs.
+-   Configure the Router's builtin `WebUI` & `SSH`.
+-   Configure `NTP`.
+-   Add `Debian` package repos.
+-   Enable Deep Package Inspection (`DPI`.)
+-   Set default traffic shaping rules.
