@@ -6,6 +6,7 @@
 
 -   [Configs](Configs/README.md)
     -   [Caddy](Configs/Caddy_conf.md)
+    -   [SSHD_Config](Configs/sshd_config.md)
     -   [EdgeRouter](Configs/EdgeRouter/README.md)
         -   [EdgeRouter-Commands](Configs/EdgeRouter/EdgeRouter_Commands.md)
         -   [EdgeRouter-Full_Config](Configs/EdgeRouter/EdgeRouter_Config.md)
@@ -60,7 +61,7 @@
     -   [Network_Troubleshooting](Snippets/Network_Troubleshooting.md)
     -   [NGINX_Ref](Snippets/NGINX_Ref.md)
     -   [PS_Ref](Snippets/ps_Ref.md)
-    -   [SSH_Ref](Snippets/SSH_Ref.md)
+         <!-- [SSH_Ref](Snippets/SSH_Ref.md) -->
     -   [Storage](Snippets/Storage.md)
     -   [User_Groups](Snippets/Users_Groups.md)
     -   [UFW](Snippets/UFW.md)
