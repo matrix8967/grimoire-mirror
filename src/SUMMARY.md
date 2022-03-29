@@ -24,6 +24,7 @@
         -   [Pika](Configs/Terminal/ASCII/pika_full.md)
         -   [Skull](Configs/Terminal/ASCII/Skull.md)
             <!-- -   [SBob](Configs/Terminal/ASCII/Sbob.md) -->
+        -   [Success](Configs/Terminal/ASCII/success.md)
         -   [Unicode](Configs/Terminal/ASCII/Unicode.md)
 
 
