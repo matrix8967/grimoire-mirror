@@ -73,7 +73,7 @@
 ## EdgeSwitch SFP/SFP+ Interface Options
     https://help.ui.com/hc/en-us/articles/360013601733
 
-    * * *
+* * *
 
 # Firewall
 
@@ -95,7 +95,7 @@
 ## UNMS Gateway
     https://help.ui.com/hc/en-us/articles/360019887194-UNMS-v1-Global-Features-for-Networks
 
-    * * *
+* * *
 
 # Performance / Misc
 
