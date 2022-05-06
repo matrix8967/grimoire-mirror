@@ -13,7 +13,7 @@ This script can be copied wholesale and made to run once to get a quick look at 
 
 It may also need to be adjusted depending on if you're logging failures to another log - i.e. `/var/log/nginx/error.log`
 
-```sh
+```sh,editable
 #!/usr/bin/env bash
 set -eE
 

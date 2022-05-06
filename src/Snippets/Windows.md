@@ -1,12 +1,17 @@
 # Windows
 
-## Windows 11 OOBE Local Account Setup:
+In newer versions of Win10 and Win11 - Microsoft has fully committed to one of their favorite `UI/UX` traps: forcing users into having no choice but to use their invasive adware masquerading as services. 🙄️
+
+Thankfully - with a bit of unnecessary elbow grease - you can force the Windows `OOBE` (Out Of Box Experience) to _fuck off_ and allow you to setup a _local user_ account without anchoring it to Microsoft's online "services."
+
+## Windows 10 / Windows 11 OOBE Local Account Setup:
 
 -   Get to _Sign In With Microsoft Account_ in OOBE.
 -   `Shift` + `F10` to launch terminal.
 -   Type: `ncpa.cpl`
 -   Disable Network Device Adapter(s).
 -   Go back to OOBE, retry User Setup.
+-   After setup is complete you can re-enable your Network Device Adapters.
 
 ## Windows Product Key retrieval:
 
