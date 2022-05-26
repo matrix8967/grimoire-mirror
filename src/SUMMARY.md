@@ -56,6 +56,7 @@
 # Snippets
 
 -   [Snippets](Snippets/README.md)
+    -   [Android](Snippets/Android.md)
     -   [Browser_Plugins](Snippets/Browsers.md)
     -   [MacOS](Snippets/MacOS.md)
     -   [Network_Troubleshooting](Snippets/Network_Troubleshooting.md)

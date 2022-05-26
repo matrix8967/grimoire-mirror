@@ -160,15 +160,24 @@ while i=1; do echo -ne 'Wifi signal strength:' $(/System/Library/PrivateFramewor
 
 ### MacOS Deployment Overview:
 
--   <https://www.apple.com/business/docs/site/Mac_Deployment_Overview.pdf>
--   <https://www.apple.com/business/docs/resources/AppleSeed_for_IT_Guide.pdf>
--   <https://support.apple.com/guide/deployment-reference-macos/getting-proper-wi-fi-coverage-iorb54f75587/web>
--   <https://support.apple.com/guide/deployment-reference-macos/intro-to-bonjour-apd0401947ff/web>
--   <https://support.apple.com/guide/deployment-reference-macos/integrating-macos-with-active-directory-iorbeda89d1d/web>
--   <https://support.apple.com/guide/deployment-reference-macos/single-sign-on-extension-apdac83c038d/web>
--   <https://support.apple.com/guide/deployment-reference-macos/intro-to-identity-management-apd28d472300/web>
+-   [Deployment Overview.](https://www.apple.com/business/docs/site/Mac_Deployment_Overview.pdf)
+-   [AppleSeed IT Guide.](https://www.apple.com/business/docs/resources/AppleSeed_for_IT_Guide.pdf)
+-   [MacOS SSO.](https://support.apple.com/guide/deployment-reference-macos/single-sign-on-extension-apdac83c038d/web)
+-   [Identity Mgmt.](https://support.apple.com/guide/deployment-reference-macos/intro-to-identity-management-apd28d472300/web)
+
+### MacOS Networking Articles:
+
+-   [WiFi Coverage.](https://support.apple.com/guide/deployment-reference-macos/getting-proper-wi-fi-coverage-iorb54f75587/web)
+-   [fkn mDNS.](https://support.apple.com/guide/deployment-reference-macos/intro-to-bonjour-apd0401947ff/web)
+-   [AD Integration.](https://support.apple.com/guide/deployment-reference-macos/integrating-macos-with-active-directory-iorbeda89d1d/web)
+-   [Private Relay.](https://support.apple.com/en-us/HT212614)
+
 
 * * *
+
+### MacOS Support Pages:
+
+Useful for users.
 
 -   MacOS / Device Network Ports:
 

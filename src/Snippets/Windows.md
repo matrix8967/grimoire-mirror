@@ -1,10 +1,10 @@
 # Windows
 
+## Windows 10 / Windows 11 OOBE Local Account Setup:
+
 In newer versions of Win10 and Win11 - Microsoft has fully committed to one of their favorite `UI/UX` traps: forcing users into having no choice but to use their invasive adware masquerading as services. 🙄️
 
 Thankfully - with a bit of unnecessary elbow grease - you can force the Windows `OOBE` (Out Of Box Experience) to _fuck off_ and allow you to setup a _local user_ account without anchoring it to Microsoft's online "services."
-
-## Windows 10 / Windows 11 OOBE Local Account Setup:
 
 -   Get to _Sign In With Microsoft Account_ in OOBE.
 -   `Shift` + `F10` to launch terminal.
@@ -13,15 +13,19 @@ Thankfully - with a bit of unnecessary elbow grease - you can force the Windows 
 -   Go back to OOBE, retry User Setup.
 -   After setup is complete you can re-enable your Network Device Adapters.
 
+-----
+
+## Change RDP Port & Firewall Rules:
+
+```
+Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "PortNumber" -Value $PORT_NUMBER
+New-NetFirewallRule -DisplayName 'RDPPORTLatest-TCP-In' -Profile 'Public' -Direction Inbound -Action Allow -Protocol TCP -LocalPort $PORT_NUMBER
+New-NetFirewallRule -DisplayName 'RDPPORTLatest-UDP-In' -Profile 'Public' -Direction Inbound -Action Allow -Protocol UDP -LocalPort $PORT_NUMBER
+```
+
 ## Windows Product Key retrieval:
 
 `wmic path SoftwareLicensingService get OA3xOriginalProductKey`
-
-## Debloat tools:
-
-`https://www.oo-software.com/en/shutup10`
-
-`https://github.com/builtbybel/privatezilla`
 
 ## Windows Native SSH:
 
@@ -41,6 +45,14 @@ Thankfully - with a bit of unnecessary elbow grease - you can force the Windows 
 
 [Docs.](https://docs.microsoft.com/en-us/windows/terminal/)
 
+## Debloat tools:
+
+[O&O Shutup10](https://www.oo-software.com/en/shutup10)
+
+[Privatezilla](https://github.com/builtbybel/privatezilla)
+
+-----
+
 ## Scoop:
 
 <https://scoop.sh/>
@@ -57,6 +69,22 @@ Add-MpPreference -ExclusionPath "$($env:programdata)\scoop"
 ```
 ### Re-enable Win Defender:
 `Remove-MpPreference -ExclusionPath "$($env:programdata)\scoop", "$($env:scoop)"`
+
+### Scoop Buckets:
+
+```
+scoop bucket add main
+scoop bucket add extras
+scoop bucket add versions
+scoop bucket add nirsoft
+scoop bucket add php
+scoop bucket add nerd-fonts
+scoop bucket add nonportable
+scoop bucket add java
+scoop bucket add games
+```
+
+-----
 
 ## Ubuntu & Active Directory:
 
