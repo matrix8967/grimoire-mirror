@@ -12,9 +12,15 @@
 
 * * *
 
+## Create RAW Disk Image over SSH:
+
+`ssh $HOST 'sudo -S dd if=/dev/$STORAGE_BLKID ' | dd of=filename.img`
+
+* * *
+
 ### 2FA for SSH
 
--   WIP
+> TODO
 
 * * *
 

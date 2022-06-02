@@ -42,6 +42,7 @@
         -   [GHDB](Notes/NetSec/GHDB.md)
         -   [Encyption_Types](Notes/NetSec/Encryption_Types.md)
     -   [Networking](Notes/Networking/README.md)
+        -   [DNS](Notes/Networking/DNS.md)
         -   [Proxies](Notes/Networking/Proxy_Notes.md)
         -   [Ubiquiti_Links](Notes/Networking/Ubiquiti.md)
     -   [Nginx](Notes/Nginx/README.md)
