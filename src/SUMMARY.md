@@ -22,8 +22,8 @@
         <!-- -   [Anime](Configs/Terminal/ASCII/Anime.md) -->
         -   [HERETIC](Configs/Terminal/ASCII/HERETIC.md)
         -   [Mainframe.computer](Configs/Terminal/ASCII/Mainframe_Animated.md)
-        -   [Pika](Configs/Terminal/ASCII/pika_full.md)
-        -   [Skull](Configs/Terminal/ASCII/Skull.md)
+        <!-- -   [Pika](Configs/Terminal/ASCII/pika_full.md) -->
+        <!-- -   [Skull](Configs/Terminal/ASCII/Skull.md) -->
             <!-- -   [SBob](Configs/Terminal/ASCII/Sbob.md) -->
             <!-- -   [Success](Configs/Terminal/ASCII/success.md) -->
         -   [Unicode](Configs/Terminal/ASCII/Unicode.md)
@@ -44,7 +44,8 @@
     -   [Networking](Notes/Networking/README.md)
         -   [DNS](Notes/Networking/DNS.md)
         -   [Proxies](Notes/Networking/Proxy_Notes.md)
-        -   [Ubiquiti_Links](Notes/Networking/Ubiquiti.md)
+        <!-- -   [Ubiquiti_Links](Notes/Networking/Ubiquiti.md) -->
+        -   [VyOS_Links](Notes/Networking/VyOS.md)
     -   [Nginx](Notes/Nginx/README.md)
         -   [Nginx_Notes](Notes/Nginx/Nginx_Notes.md)
         -   [Nginx_Links](Notes/Nginx/Nginx_Links.md)

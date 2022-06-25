@@ -17,6 +17,45 @@
 -   Useful for debloating.
 -   `adb shell pm list users` to get user ID. Default 0.
 
+`adb shell wm density 288`
+-   Adjust screen density.
+
+`adb shell wm density reset`
+-   Restores default density
+
+### Keyboard Input:
+
+`adb shell input tap 500 1450`
+-   Emulates a touch at coordinates. (
+
+`adb shell input swipe 100 500 100 1450 100`
+-   This will perform a `swipe` from `X1` `Y1` to `X2` `Y2` in `100ms`
+-   `X1`=100, `Y1`=500, `X2`=100, `Y2`=1450, `Duration` = 100ms.
+
+`adb shell input swipe 100 500 100 500 250`
+-   `swipe` can also be used for a longpress by not tracking an Axis.
+
+### ADB Text Input Shell Function:
+
+This function can be added to your shell (Bash/Zsh) Environment that will automatically sanitize & send your text to your device over `ADB`. Useful for WearOS & Embedded devices that have limited I/O.
+
+```bash,editable
+
+function ADB_Text {
+	text=$(printf '%s%%s' ${@})
+	text=${text%%%s}
+	text=${text//\'/\\\'}
+	text=${text//\"/\\\"}
+	adb shell input text "$text"
+	adb shell input keyevent 66
+}
+
+```
+
+Usage:
+
+-   `ADB_Text pkg upgrade`
+
 * * *
 
 ### APK_Pull.sh
@@ -26,8 +65,8 @@ Script to use `ADB`'s built in shell and `packagemanager` (`pm`) to pull `.APK` 
 ```bash,editable
 #!/usr/bin/env bash
 
-for i in $(sudo adb shell pm list packages | awk -F':' '{print $2}'); do
-  sudo adb pull "$(sudo adb shell pm path $i | awk -F':' '{print $2}')";
+for i in $(adb shell pm list packages | awk -F':' '{print $2}'); do
+  adb pull "$(adb shell pm path $i | awk -F':' '{print $2}')";
   mv base.apk $i.apk &> /dev/null
 done
 ```
@@ -42,7 +81,7 @@ Requires `root`.
 adb forward tcp:5555 tcp:5555
 adb shell
 su
-nc -l -p 5555 dd if=/dev/block/mmcblk0
+nc -l -p 5555 dd if=/dev/block/mmcblk0 status=progress
 ```
 
 -   Setup ADB networking and forward ports.
@@ -60,9 +99,28 @@ nc 127.0.0.1 5555 | pv -i 0.5 > Raw_Image_File_Name.raw
 
 # Termux
 
-> TO DO
+`pkg list-installed | cut -d "/" -f 1`
+-   List Installed Packages from `Termux` Repos.
+
+`pkg list-all | grep -v "installed" | cut -d "/" -f 1`
+-   List all Packages *NOT* installed from `Termux` Repos.
+
+`adb shell input text pkg%supgrade` && `adb shell input keyevent 66`
+-   ADB remote input to send `pkg upgrade` followed by `Enter`.
+
+## Termux Config:
+
+Termux Config File: `/data/data/com.termux/files/home/.termux/termux.properties`
+
+Changing Default Extra Keys:
+
+```
+extra-keys = [['ESC','TAB','HOME','UP','END','DEL'], \
+              ['CTRL','ENTER','LEFT','DOWN','RIGHT','BKSP']]
+```
 
 * * *
+
 # scrcpy
 
 `scrcpy -SwK -m 1920`
