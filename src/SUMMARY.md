@@ -6,10 +6,15 @@
 
 -   [Configs](Configs/README.md)
     -   [Caddy](Configs/Caddy_conf.md)
-    -   [SSHD_Config](Configs/sshd_config.md)
+    <!-- -   [SSHD_Config](Configs/sshd_config.md) -->
     -   [EdgeRouter](Configs/EdgeRouter/README.md)
         -   [EdgeRouter-Commands](Configs/EdgeRouter/EdgeRouter_Commands.md)
         -   [EdgeRouter-Full_Config](Configs/EdgeRouter/EdgeRouter_Config.md)
+    -   [Git Config](Configs/Git.md)
+    -   [SSH Configs](Configs/SSH/README.md)
+        -   [User SSH Config](Configs/SSH/user.md)
+        -   [System SSH Config](Configs/SSH/system.md)
+        -   [System SSH Daemon Config](Configs/SSH/sshd.md)
     -   [Terminal](Configs/Terminal/README.md)
         -   [bat](Configs/Terminal/bat_config.md)
         -   [Kitty](Configs/Terminal/kitty_conf.md)
@@ -52,6 +57,7 @@
     -   [SSH](Notes/SSH/README.md)
         -   [SSH_Notes](Notes/SSH/SSH_Notes.md)
         -   [SSH_Links](Notes/SSH/SSH_Links.md)
+        -   [SSH_CLI_Flags](Notes/SSH/SSH_CLI_Flags.md)
 
 * * *
 
@@ -64,7 +70,6 @@
     -   [Network_Troubleshooting](Snippets/Network_Troubleshooting.md)
     -   [NGINX_Ref](Snippets/NGINX_Ref.md)
     -   [PS_Ref](Snippets/ps_Ref.md)
-         <!-- [SSH_Ref](Snippets/SSH_Ref.md) -->
     -   [Storage](Snippets/Storage.md)
     -   [User_Groups](Snippets/Users_Groups.md)
     -   [UFW](Snippets/UFW.md)

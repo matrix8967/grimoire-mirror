@@ -93,5 +93,4 @@ https://ubuntu.com//blog/ubuntu-21-04-is-here
 https://github.com/ubuntu/adsys
 https://github.com/ubuntu/adsys/tree/main/internal/policies/ad/definitions/policy/Ubuntu/all
 https://ubuntu.com/server/docs/service-sssd
-https://warlord0blog.wordpress.com/2020/02/04/tunnelling-rdp-over-ssh/
 ```

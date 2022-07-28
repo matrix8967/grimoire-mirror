@@ -1,6 +1,6 @@
 # SSH_Notes
 
-### sshd
+### Testing & Restarting the SSH Daemon Service:
 
 `sudo sshd -t`
 
@@ -18,91 +18,84 @@
 
 * * *
 
-### 2FA for SSH
-
-> TODO
-
-* * *
-
-### Bypass `2FA` for SSH User.
-
-#### `/etc/ssh/sshd_conf`
-
-    Match User $USER Address $IP_ADDRESS
-           AuthenticationMethods publickey
-
-* * *
-
-### SSH Config:
-
-Instead of defining _functions_ or _variables_ in your `$PATH` - defining a `config` file for `ssh` commonly used connections is recommended. An example of an entry is shown below.
-
-On _most_ `*nix` based systems - the default `ssh-config` file for a user is stored in `~/.ssh/config`.  When in doubt, consult your system's global `ssh` config file(s).
-
-    Host $CONNECTION-NAME
-    	Hostname $REMOTE-HOST
-    	Port $REMOTE-SSH-PORT
-    	User REMOTE-USER
-    	ProxyJump $JUMP-HOST
-    	ForwardX11 yes
-    	Ciphers blowfish-cbc,arcfour
-
-* * *
-
-### SSH CLI Flags:
-
--   `4`  = `force ssh to use IPv4 addresses only`
--   `6`  = `force ssh to use IPv6 addresses only`
--   `a`  = `disable forwarding of authentication agent connection`
--   `A`  = `enable forwarding of the authentication agent connection`
--   `B`  = `bind to specified interface before attempting to connect`
--   `b`  = `specify interface to transmit on`
--   `C`  = `compress data`
--   `c`  = `select encryption cipher`
--   `D`  = `specify a dynamic port forwarding`
--   `E`  = `append log output to file instead of stderr`
--   `e`  = `set escape character`
--   `f`  = `go to background`
--   `F`  = `specify alternate config file`
--   `g`  = `allow remote hosts to connect to local forwarded ports`
--   `G`  = `output configuration and exit`
--   `i`  = `select identity file`
--   `I`  = `specify smartcard device`
--   `J`  = `connect via a jump host`
--   `k`  = `disable forwarding of GSSAPI credentials`
--   `K`  = `enable GSSAPI-   based authentication and forwarding`
--   `L`  = `specify local port forwarding`
--   `l`  = `specify login name`
--   `M`  = `master mode for connection sharing`
--   `m`  = `specify mac algorithms`
--   `N`  = `don't execute a remote command`
--   `n`  = `redirect stdin from /dev/null`
--   `O`  = `control an active connection multiplexing master process`
--   `o`  = `specify extra options`
--   `p`  = `specify port on remote host`
--   `P`  = `use non privileged port`
--   `Q`  = `query parameters`
--   `q`  = `quiet operation`
--   `R`  = `specify remote port forwarding`
--   `s`  = `invoke subsystem`
--   `S`  = `specify location of control socket for connection sharing`
--   `T`  = `disable pseudo-   tty allocation`
--   `t`  = `force pseudo-   tty allocation`
--   `V`  = `show version number`
--   `v`  = `verbose mode (multiple increase verbosity, up to 3)`
--   `W`  = `forward standard input and output to host`
--   `w`  = `request tunnel device forwarding`
--   `x`  = `disable X11 forwarding`
--   `X`  = `enable (untrusted) X11 forwarding`
--   `Y`  = `enable trusted X11 forwarding`
--   `y`  = `send log info via syslog instead of stderr`
-
-* * *
-
-### Example:
+### Connect to remote host on Port 22 through a Jump Host:
 
 `ssh -J $JUMP-USER@$JUMP-HOST -p 22 $REMOTE-USER@$REMOTE-HOST`
 
--   `ssh -J $JUMP-HOST -p 22 $REMOTE-USER@$REMOTE-HOST`  = Connect to `$REMOTE-HOST` on `Port 22`, tunneling the connection through a jump host.
+* * *
+
+### Tunnel RDP Connections over SSH Tunnel from a Control Node:
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
+scriptname="$(basename $0)"
+
+if [ $# -lt 3 ]
+ then
+    echo "Usage: $scriptname start | stop  RDP_NODE_IP  SSH_NODE_IP SSH_LOCAL_PORT"
+    exit
+fi
+
+case "$1" in
+
+start)
+
+  echo "Starting tunnel to $3"
+  ssh -M -S ~/.ssh/$scriptname.${4:-3389}.control -fnNT -L ${4:-3389}:$2:3389 $3
+  ssh -S ~/.ssh/$scriptname.${4:-3389}.control -O check $3
+  ;;
+
+stop)
+  echo "Stopping tunnel to $3"
+  ssh -S ~/.ssh/$scriptname.${4:-3389}.control -O exit $3
+
+ ;;
+
+*)
+  echo "Did not understand your argument, please use start|stop"
+  ;;
+
+esac
+```
+
+
+`~/.ssh/rdp-tunnel.sh start $REMOTE_CLIENT $CONTROL_NODE_IP $LOCAL_PORT`
+
+-   Pre Command. ^^
+
+`~/.ssh/rdp-tunnel.sh stop $REMOTE_CLIENT $CONTROL_NODE_IP $LOCAL_PORT`
+
+-   Post Command. ^^
+
+`localhost:LOCAL_PORT`
+
+-   Address for RDP Tunnel on the SSH Control Node. ^^
 
 * * *
+
+## RSync:
+
+```bash
+rsync -razuvhLP --exclude 'directory01' --exclude '*.ssh' --remove-source-files --info=progress2 -e "ssh -i /home/$USER/.ssh/keyfile" /home/example_directory $REMOTE_USER@$REMOTE_HOST:/home/$USER/rsync_destination/ > /home/$USER/rsync_Output.txt
+```
+
+An example _one liner_ using RSync to back up a directory to a remote host, while:
+
+* excludes certain directories.
+* Shows Progress Info.
+* Logs `stdout` & `stder` to a logfile.
+* Removes the Source Files upon successful completion of transfer.
+  * (Validation Methods can be customized: Filesize, Hashsums, etc.)
+* Specifies a non-default `keyfile` for Authentication.
+* Uses the following RSync Flags:
+  * [r]ecursively
+  * [a]rchive
+  * Resolve Soft[l]inks
+  * Ignore Duplicates [u]nless newer.
+  * Display [h]uman-readable [P]rogress.
