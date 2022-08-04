@@ -18,6 +18,8 @@
 
 <https://github.com/touilleMan/godot-python>
 
+<https://godottutorials.com/courses/introduction-to-gdscript/>
+
 ## GD Plugins:
 
 <https://github.com/QodotPlugin/qodot-plugin>
@@ -46,19 +48,19 @@
 
 ## HN Gossip:
 
-Godot 4.0 Feature Freeze:
+### Godot 4.0 Feature Freeze:
 
 -   <https://news.ycombinator.com/item?id=32265429>
 
 -   <https://godotengine.org/article/godot-4-0-development-enters-feature-freeze>
 
-Godot 4.0 Vulkan:
+### Godot 4.0 Vulkan:
 
 -   <https://news.ycombinator.com/item?id=27873511>
 
 -   <https://godotengine.org/article/about-godot4-vulkan-gles3-and-gles2>
 
-Godot 3.3 Release:
+### Godot 3.3 Release:
 
 -   <https://news.ycombinator.com/item?id=26896340>
 
@@ -66,7 +68,9 @@ Godot 3.3 Release:
 
 * * *
 
-# Graphics
+# Assets
+
+## Graphics
 
 <https://mrmotarius.itch.io/mrmo-halftone>
 
@@ -81,6 +85,8 @@ Godot 3.3 Release:
 <https://github.com/sehugg/awesome-8bitgamedev>
 
 <https://github.com/sehugg/8bit-tools/>
+
+<https://libresprite.github.io/#!/>
 
 <https://github.com/luisnts/awesome-computer-graphics>
 
@@ -98,9 +104,8 @@ Godot 3.3 Release:
 
 <http://www.pikuma.com/>
 
-<https://news.ycombinator.com/item?id=31724224> -- Quake running on GBA Thread.
 
-# UI
+## UI
 
 <https://www.gameuidatabase.com/gameData.php?id=801>
 
@@ -110,7 +115,7 @@ Godot 3.3 Release:
 
 <https://github.com/emilk/egui>
 
-# Misc Graphics
+## Misc Graphics
 
 <https://aeriform.itch.io/minicube64>
 
@@ -121,6 +126,18 @@ Godot 3.3 Release:
 <https://github.com/henriquelalves/SimpleGodotCRTShader>
 
 <https://github.com/utilForever/game-developer-roadmap>
+
+<https://opengameart.org/>
+
+<https://magnum.graphics/>
+
+<https://pixabay.com/>
+
+## Audio
+
+<https://pixabay.com/music/>
+
+<https://tenacityaudio.org/>
 
 * * *
 
