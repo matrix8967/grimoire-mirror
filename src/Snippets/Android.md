@@ -23,7 +23,7 @@
 `adb shell wm density reset`
 -   Restores default density
 
-### Keyboard Input:
+### ADB Input:
 
 `adb shell input tap 500 1450`
 -   Emulates a touch at coordinates. (

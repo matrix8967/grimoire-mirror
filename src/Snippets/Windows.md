@@ -94,3 +94,11 @@ https://github.com/ubuntu/adsys
 https://github.com/ubuntu/adsys/tree/main/internal/policies/ad/definitions/policy/Ubuntu/all
 https://ubuntu.com/server/docs/service-sssd
 ```
+
+-----
+
+## Windows Package Manager:
+
+`https://github.com/microsoft/winget-cli`
+`https://github.com/microsoft/winget-pkgs`
+`https://docs.microsoft.com/en-us/learn/modules/explore-windows-package-manager-tool/?WT.mc_id=AZ-MVP-5004737`

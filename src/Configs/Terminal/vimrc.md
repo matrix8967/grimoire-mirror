@@ -1,6 +1,6 @@
 # vimrc
 
-```
+```bash,editable
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set encoding=utf8
@@ -73,13 +73,13 @@ syntax enable
 " Oceanic:
 
 " Dark
-"set background=dark
-"colorscheme vim-material
+" set background=dark
+" colorscheme vim-material
 
 " Palenight
-"let g:material_style='palenight'
-"set background=dark
-"colorscheme vim-material
+" let g:material_style='palenight'
+" set background=dark
+" colorscheme vim-material
 
 " Oceanic
 let g:material_style='oceanic'
@@ -87,21 +87,14 @@ set background=dark
 colorscheme vim-material
 
 " Light
-"set background=light
-"colorscheme vim-material
+" set background=light
+" colorscheme vim-material
 
 " Dracula:
 
 " syntax enable
 " let g:dracula_colorterm = 0
 " colorscheme dracula
-
-" DraculaPro:
-
-" packadd! dracula_pro
-" syntax enable
-" let g:dracula_colorterm = 0
-" colorscheme dracula_pro
 
 " Powerline Colors:
 
