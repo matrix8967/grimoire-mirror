@@ -5,15 +5,21 @@
 -   `terminal length 0`
     -   Removes default CLI paging limit.
 
-## Shell Function to strip `RFC1918` IP Ranges from a config file:
+## Sanitize Configs:
+
+Shell Function to strip `RFC1918` IP Ranges (Private IPs/Subnets) from config files before uploading.
 
 ```bash
 
-function strip_IPs {
+function Strip_IPs {
 	sed -E -r 's/(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)/$IP_ADDRESSES/g' $1
 }
 
 ```
+
+### Usage:
+
+`Strip_IPs $filename.conf` - displays sanitized `filename.conf.` Save to new file with `>` shell operand.
 
 * * *
 
