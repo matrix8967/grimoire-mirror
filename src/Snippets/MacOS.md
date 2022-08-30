@@ -75,30 +75,7 @@ while i=1; do echo -ne 'Wifi signal strength:' $(/System/Library/PrivateFramewor
 
     -   Run performance / diagnostic and place results on the Desktop.
 
-## Bootable USB Installer:
-
-```bash
-    # macOS 11 (Big Sur)
-    sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/USB --nointeraction --downloadassets
-
-    # macOS 10.15 (Catalina)
-    sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/USB --nointeraction --downloadassets
-
-    # macOS 10.14 (Mojave)
-    sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/USB --nointeraction --downloadassets
-
-    # macOS 10.13 (High Sierra)
-    sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/USB --applicationpath /Applications/Install\ macOS\ High\ Sierra.app
-
-    # macOS 10.12 (Sierra)
-    sudo /Applications/Install\ macOS\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/USB --applicationpath /Applications/Install\ macOS\ Sierra.app
-
-    # OS X 10.11 (El Capitan)
-    sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/USB --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app
-
-    # OS X 10.10 (Yosemite)
-    sudo /Applications/Install\ OS\ X\ Yosemite.app/Contents/Resources/createinstallmedia --volume /Volumes/USB --applicationpath /Applications/Install\ OS\ X\ Yosemite.app
-```
+* * *
 
 ## Kernel Extensions
 
@@ -128,7 +105,15 @@ while i=1; do echo -ne 'Wifi signal strength:' $(/System/Library/PrivateFramewor
 
 -   Erase & Rebuild `Spotlight` Search.
 
-## MacOS Log Locations:
+* * *
+
+## Logs & Reporting:
+
+### Generate Advanced System & Performance Report:
+
+```bash
+sudo sysdiagnose -f ~/Desktop/
+```
 
 -   System Log Directory:
 
@@ -153,6 +138,39 @@ while i=1; do echo -ne 'Wifi signal strength:' $(/System/Library/PrivateFramewor
 -   User Reports:
 
     -   `~/Library/Logs/DiagnosticReports`
+
+* * *
+
+## Bootable USB Installer:
+
+```bash
+    # macOS 11 (Big Sur)
+    sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/USB --nointeraction --downloadassets
+
+    # macOS 10.15 (Catalina)
+    sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/USB --nointeraction --downloadassets
+
+    # macOS 10.14 (Mojave)
+    sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/USB --nointeraction --downloadassets
+
+    # macOS 10.13 (High Sierra)
+    sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/USB --applicationpath /Applications/Install\macOS\ High\ Sierra.app
+
+    # macOS 10.12 (Sierra)
+    sudo /Applications/Install\ macOS\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/USB --applicationpath /Applications/Install\ macOS\Sierra.app
+
+    # OS X 10.11 (El Capitan)
+    sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/USB --applicationpath /Applications/Install\ OS\X\ El\ Capitan.app
+
+    # OS X 10.10 (Yosemite)
+    sudo /Applications/Install\ OS\ X\ Yosemite.app/Contents/Resources/createinstallmedia --volume /Volumes/USB --applicationpath /Applications/Install\ OS\ X\Yosemite.app
+```
+
+* * *
+
+## Initial Configuration & Setup:
+
+> TO DO.
 
 * * *
 
@@ -208,3 +226,9 @@ Useful for users.
     -   <https://getsupport.apple.com>
 
 * * *
+
+## MacOS VMs:
+
+> TO-DO.
+
+![MacOSVM](../Images/MacOSVM.png)
