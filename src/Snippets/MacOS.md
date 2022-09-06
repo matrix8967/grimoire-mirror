@@ -168,12 +168,6 @@ sudo sysdiagnose -f ~/Desktop/
 
 * * *
 
-## Initial Configuration & Setup:
-
-> TO DO.
-
-* * *
-
 ## Links:
 
 ### MacOS Deployment Overview:
@@ -232,3 +226,9 @@ Useful for users.
 > TO-DO.
 
 ![MacOSVM](../Images/MacOSVM.png)
+
+## MacOS Automated Setup:
+
+> TO-DO.
+
+<script id="asciicast-BIkZBwZxJ3jA2owDqMpf7ScBF" src="https://asciinema.org/a/BIkZBwZxJ3jA2owDqMpf7ScBF.js" data-autoplay="true" data-loop="true" async></script>
