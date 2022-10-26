@@ -25,15 +25,19 @@
         -   [Tmux](Configs/Terminal/tmux_conf.md)
         -   [Vim](Configs/Terminal/vimrc.md)
         -   [ZSH](Configs/Terminal/zshrc.md)
-    -   [ASCII](Configs/Terminal/ASCII/README.md)
+    -   [Windows](Configs/Windows/README.md)
+        -   [O&O Shutup 10](Configs/Windows/ooshutup10.md)
+        -   [Scoop](Configs/Windows/Scoopfile.md)
+        -   [Windows Terminal](Configs/Windows/WindowsTerminal.md)
+    <!-- -   [ASCII](Configs/Terminal/ASCII/README.md) -->
         <!-- -   [Anime](Configs/Terminal/ASCII/Anime.md) -->
-        -   [HERETIC](Configs/Terminal/ASCII/HERETIC.md)
-        -   [Mainframe.computer](Configs/Terminal/ASCII/Mainframe_Animated.md)
+        <!-- -   [HERETIC](Configs/Terminal/ASCII/HERETIC.md) -->
+        <!-- -   [Mainframe.computer](Configs/Terminal/ASCII/Mainframe_Animated.md) -->
         <!-- -   [Pika](Configs/Terminal/ASCII/pika_full.md) -->
         <!-- -   [Skull](Configs/Terminal/ASCII/Skull.md) -->
             <!-- -   [SBob](Configs/Terminal/ASCII/Sbob.md) -->
             <!-- -   [Success](Configs/Terminal/ASCII/success.md) -->
-        -   [Unicode](Configs/Terminal/ASCII/Unicode.md)
+        <!-- -   [Unicode](Configs/Terminal/ASCII/Unicode.md) -->
 
 * * *
 
@@ -61,6 +65,11 @@
         -   [SSH_Notes](Notes/SSH/SSH_Notes.md)
         -   [SSH_Links](Notes/SSH/SSH_Links.md)
         -   [SSH_CLI_Flags](Notes/SSH/SSH_CLI_Flags.md)
+    -   [Windows](Notes/Windows/README.md)
+        -   [Setup](Notes/Windows/WinSetup.md)
+        -   [Post-Install](Notes/Windows/WinPostInstall.md)
+        -   [WSL](Notes/Windows/WSL.md)
+
 
 * * *
 
@@ -77,4 +86,4 @@
     -   [SystemD](Snippets/SystemD.md)
     -   [User_Groups](Snippets/Users_Groups.md)
     -   [UFW](Snippets/UFW.md)
-    -   [Windows](Snippets/Windows.md)
+    <!-- -   [Windows](Snippets/Windows.md) -->
