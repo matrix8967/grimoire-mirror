@@ -1,30 +1,68 @@
 # SSH_Notes
 
-### Testing & Restarting the SSH Daemon Service:
-
-`sudo sshd -t`
+```bash
+sudo sshd -t
+```
 
 -   Test the `sshd_config` file for errors before reloading / restarting the service.
 
-`/usr/sbin/sshd -D -p 2222`
+```bash
+/usr/sbin/sshd -D -p 2222
+```
 
 -   Create a new `ssh` instance in the foreground on a separate port as a failsafe shell. (like when editing `/etc/ssh/sshd_config`)
+
+```bash
+ssh -J $JUMPUSER@$JUMPHOST -p 22 $REMOTEUSER@$REMOTEHOST
+```
+
+-   Connect to remote host on Port 22 through a Jump Host.
+
+```bash
+ssh $REMOTEUSER@$REMOTEHOST -t "ls -al"
+```
+
+-   Interactive Command Execution on a Remote Host via `pseudo-tty`.
+
+```bash
+ssh -i $PRIV_KEY -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o PreferredAuthentications=publickey $REMOTEUSER@$REMOTEHOST -n "/bin/ls"
+```
+
+-   Non-Interactive Command Execution.
+    - This is probably not a good idea.
 
 * * *
 
 ## Create RAW Disk Image over SSH:
 
-`ssh $HOST 'sudo -S dd if=/dev/$STORAGE_BLKID ' | dd of=filename.img`
+`ssh $REMOTEHOST 'sudo -S dd if=/dev/$STORAGE_BLKID ' | dd of=filename.img`
 
 * * *
 
-### Connect to remote host on Port 22 through a Jump Host:
+## RSync:
 
-`ssh -J $JUMP-USER@$JUMP-HOST -p 22 $REMOTE-USER@$REMOTE-HOST`
+```bash
+rsync -razuvhLP --exclude 'directory01' --exclude '*.ssh' --remove-source-files --info=progress2 -e "ssh -i /home/$USER/.ssh/keyfile" /home/example_directory $REMOTEUSER@$REMOTEHOST:/home/$USER/rsync_destination/ > /home/$USER/rsync_Output.txt
+```
 
-* * *
+An example _one liner_ using RSync to back up a directory to a remote host:
 
-### Tunnel RDP Connections over SSH Tunnel from a Control Node:
+* excludes certain directories.
+* Shows Progress Info.
+* Logs `stdout` & `stder` to a logfile.
+* Removes the Source Files upon successful completion of transfer.
+  * (Validation Methods can be customized: Filesize, Hashsums, etc.)
+* Specifies a non-default `keyfile` for Authentication.
+* Uses the following RSync Flags:
+  * [r]ecursively
+  * [a]rchive
+  * Resolve Soft[l]inks
+  * Ignore Duplicates [u]nless newer.
+  * Display [h]uman-readable [P]rogress.
+
+-----
+
+## Tunnel RDP Connections over SSH Tunnel from a Control Node:
 
 ```bash
 #!/usr/bin/env bash
@@ -64,7 +102,6 @@ stop)
 esac
 ```
 
-
 `~/.ssh/rdp-tunnel.sh start $REMOTE_CLIENT $CONTROL_NODE_IP $LOCAL_PORT`
 
 -   Pre Command. ^^
@@ -77,25 +114,3 @@ esac
 
 -   Address for RDP Tunnel on the SSH Control Node. ^^
 
-* * *
-
-## RSync:
-
-```bash
-rsync -razuvhLP --exclude 'directory01' --exclude '*.ssh' --remove-source-files --info=progress2 -e "ssh -i /home/$USER/.ssh/keyfile" /home/example_directory $REMOTE_USER@$REMOTE_HOST:/home/$USER/rsync_destination/ > /home/$USER/rsync_Output.txt
-```
-
-An example _one liner_ using RSync to back up a directory to a remote host, while:
-
-* excludes certain directories.
-* Shows Progress Info.
-* Logs `stdout` & `stder` to a logfile.
-* Removes the Source Files upon successful completion of transfer.
-  * (Validation Methods can be customized: Filesize, Hashsums, etc.)
-* Specifies a non-default `keyfile` for Authentication.
-* Uses the following RSync Flags:
-  * [r]ecursively
-  * [a]rchive
-  * Resolve Soft[l]inks
-  * Ignore Duplicates [u]nless newer.
-  * Display [h]uman-readable [P]rogress.
