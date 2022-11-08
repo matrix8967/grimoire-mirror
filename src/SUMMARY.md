@@ -49,6 +49,8 @@
         -   [Ansible_Notes](Notes/Ansible/Ansible_Notes.md)
     -   [GameDev](Notes/GameDev/README.md)
         -   [GameDev_Links](Notes/GameDev/GameDev_Notes.md)
+    -   [MacOS](Notes/MacOS/README.md)
+        -   [MacOS](Notes/MacOS/MacOS.md)
     -   [NetSec](Notes/NetSec/README.md)
         -   [GHDB](Notes/NetSec/GHDB.md)
         -   [Encyption_Types](Notes/NetSec/Encryption_Types.md)
@@ -78,7 +80,7 @@
 -   [Snippets](Snippets/README.md)
     -   [Android](Snippets/Android.md)
     -   [Browser_Plugins](Snippets/Browsers.md)
-    -   [MacOS](Snippets/MacOS.md)
+    <!-- -   [MacOS](Snippets/MacOS.md) -->
     -   [Network_Troubleshooting](Snippets/Network_Troubleshooting.md)
     -   [NGINX_Ref](Snippets/NGINX_Ref.md)
     -   [PS_Ref](Snippets/ps_Ref.md)
