@@ -33,6 +33,8 @@ sudo ufw allow 41641/udp
 sudo semanage port -a -t ssh_port_t -p tcp 8967
 sudo firewall-cmd --add-port=8967/tcp --permanent
 sudo firewall-cmd --reload
+sudo firewall-cmd --remove-service=sshd --permanent
+sudo firewall-cmd --reload
 ```
 
 ----
