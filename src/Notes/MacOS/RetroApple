@@ -1,0 +1,86 @@
+# RetroApple
+
+## Vintage Media
+* https://512pixels.net/projects/default-mac-wallpapers-in-5k/
+* https://512pixels.net/2022/11/the-sad-saga-of-the-500-mhz-power-mac-g4/
+* https://www.printmag.com/advertising/making-the-mac-20-vintage-apple-ads/
+* https://annamancini.substack.com/p/how-the-apple-archive-ended-up-at
+
+## Vintage Code:
+
+* https://github.com/marciot/mac-minivnc
+* https://www.vogons.org/viewtopic.php?f=10&t=89172
+* http://textfiles.com/apple/
+* https://archive.org/download/macos-collection/Releases/
+
+-----
+
+## Virtual MacOS:
+
+### MacOS 7:
+* https://system7.app/
+  * https://github.com/mihaip/infinite-mac/
+* https://kanjitalk7.app/
+
+### MacOS 8:
+* https://macos8.app/
+
+### MacOS 9:
+* https://macos9.app/
+
+-----
+
+### Offical USB Boot Device Instructions:
+`https://support.apple.com/en-us/HT201372`
+
+### Official Download Links:
+`https://support.apple.com/en-us/HT211683`
+
+-----
+
+#### Lion 10.7
+`https://updates.cdn-apple.com/2021/macos/041-7683-20210614-E610947E-C7CE-46EB-8860-D26D71F0D3EA/InstallMacOSX.dmg`
+
+#### Mountain Lion 10.8
+`https://updates.cdn-apple.com/2021/macos/031-0627-20210614-90D11F33-1A65-42DD-BBEA-E1D9F43A6B3F/InstallMacOSX.dmg`
+
+#### Yosemite 10.10
+`http://updates-http.cdn-apple.com/2019/cert/061-41343-20191023-02465f92-3ab5-4c92-bfe2-b725447a070d/InstallMacOSX.dmg`
+
+#### El Capitan 10.11
+`http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg`
+
+#### Sierra 10.12
+`http://updates-http.cdn-apple.com/2019/cert/061-39476-20191023-48f365f4-0015-4c41-9f44-39d3d2aca067/InstallOS.dmg`
+
+#### High Sierra 10.13
+`macappstores://apps.apple.com/app/macos-high-sierra/id1246284741?mt=12`
+
+#### Mojave 10.14
+`macappstores://apps.apple.com/app/macos-mojave/id1398502828?mt=12`
+
+#### Catalina 10.15
+`macappstores://apps.apple.com/app/macos-catalina/id1466841314?mt=12`
+
+#### Big Sur 11
+`macappstores://apps.apple.com/app/macos-big-sur/id1526878132?mt=12`
+
+#### Monterey 12
+`macappstores://apps.apple.com/app/macos-monterey/id1576738294?mt=12`
+
+#### Ventura 13
+`macappstores://apps.apple.com/app/macos-ventura/id1638787999?mt=12`
+
+-----
+
+Creating bootable USB Device:
+
+```bash
+sudo /Applications/Install\ macOS\ Ventura.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+sudo /Applications/Install\ macOS\ Monterey.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app
+```

@@ -708,7 +708,7 @@ Useful for users.
 
 > TO-DO.
 
-![MacOS VM](../Images/MacOSVM.png)
+![MacOS VM](../../Images/MacOSVM.png)
 
 # MacOS Automated Setup:
 

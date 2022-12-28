@@ -51,7 +51,9 @@
         -   [GameDev_Links](Notes/GameDev/GameDev_Notes.md)
     -   [MacOS](Notes/MacOS/README.md)
         -   [MacOS](Notes/MacOS/MacOS.md)
+        -   [RetroApple](Notes/MacOS/RetroApple)
     -   [NetSec](Notes/NetSec/README.md)
+        -   [Apple](Notes/NetSec/AppleNetSec.md)
         -   [GHDB](Notes/NetSec/GHDB.md)
         -   [Encyption_Types](Notes/NetSec/Encryption_Types.md)
     -   [Networking](Notes/Networking/README.md)
@@ -81,11 +83,12 @@
     -   [Android](Snippets/Android.md)
     -   [Browser_Plugins](Snippets/Browsers.md)
     <!-- -   [MacOS](Snippets/MacOS.md) -->
+    -   [Firewalls](Snippets/Firewalls.md)
     -   [Network_Troubleshooting](Snippets/Network_Troubleshooting.md)
     -   [NGINX_Ref](Snippets/NGINX_Ref.md)
     -   [PS_Ref](Snippets/ps_Ref.md)
     -   [Storage](Snippets/Storage.md)
     -   [SystemD](Snippets/SystemD.md)
     -   [User_Groups](Snippets/Users_Groups.md)
-    -   [UFW](Snippets/UFW.md)
+    <!-- -   [UFW](Snippets/UFW.md) -->
     <!-- -   [Windows](Snippets/Windows.md) -->
