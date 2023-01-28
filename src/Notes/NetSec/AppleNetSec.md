@@ -1,29 +1,29 @@
 # Apple
 
-## Apple NetSec:
+## Apple NetSec
 
-* https://proton.me/blog/apple-ad-company
-* https://github.com/FSecureLABS/macOSTriageCollectionScript
-* https://github.com/FSecureLABS/Jamf-Attack-Toolkit
-* https://labs.f-secure.com/blog/jamfing-for-joy-attacking-macos-in-enterprise/
-* https://github.com/drduh/macOS-Security-and-Privacy-Guide
-* https://ahmedmusaad.com/macos-forensics-spotlight-challenge/
-* https://ahmedmusaad.com/pinned-messages-in-slack-channels/
-* https://twitter.com/twostraws/status/1328700910546132993?s=24
-* https://www.reddit.com/r/hardware/comments/jvq3do/the_fallacy_of_synthetic_benchmarks/
-* https://www.reddit.com/r/privacy/comments/jvgwg2/its_all_a_big_misunderstanding_says_apple_after/
-* https://news.ycombinator.com/item?id=25109724 # Apple VPN Bypass
-* https://news.ycombinator.com/item?id=25112768 # BigSur Update Issue
-* https://www.bejarano.io/hardening-macos/
+* <https://proton.me/blog/apple-ad-company>
+* <https://github.com/FSecureLABS/macOSTriageCollectionScript>
+* <https://github.com/FSecureLABS/Jamf-Attack-Toolkit>
+* <https://labs.f-secure.com/blog/jamfing-for-joy-attacking-macos-in-enterprise/>
+* <https://github.com/drduh/macOS-Security-and-Privacy-Guide>
+* <https://ahmedmusaad.com/macos-forensics-spotlight-challenge/>
+* <https://ahmedmusaad.com/pinned-messages-in-slack-channels/>
+* <https://twitter.com/twostraws/status/1328700910546132993?s=24>
+* <https://www.reddit.com/r/hardware/comments/jvq3do/the_fallacy_of_synthetic_benchmarks/>
+* <https://www.reddit.com/r/privacy/comments/jvgwg2/its_all_a_big_misunderstanding_says_apple_after/>
+* <https://news.ycombinator.com/item?id=25109724> # Apple VPN Bypass
+* <https://news.ycombinator.com/item?id=25112768> # BigSur Update Issue
+* <https://www.bejarano.io/hardening-macos/>
 
-### iCloud Self-Hosted Relay:
+### iCloud Self-Hosted Relay
 
-* https://news.ycombinator.com/item?id=31387019
-* https://support.apple.com/en-au/HT212614
+* <https://news.ycombinator.com/item?id=31387019>
+* <https://support.apple.com/en-au/HT212614>
 
 -----
 
-# Post Exploitation:
+# Post Exploitation
 
 ```
 
