@@ -27,13 +27,65 @@ sudo ufw allow 41641/udp
 
 -----
 
-# `firewalld` / `firewall-cmd`
+# Firewall-cmd
+
+## Zone Info
 
 ```bash
-sudo semanage port -a -t ssh_port_t -p tcp 8967
-sudo firewall-cmd --add-port=8967/tcp --permanent
+sudo systemctl enable --now firewalld
+sudo firewall-cmd --get-zones
+sudo firewall-cmd --zone work --list-all
+```
+
+## Create Zones:
+
+```bash
+sudo firewall-cmd --new-zone corp --permanent
 sudo firewall-cmd --reload
-sudo firewall-cmd --remove-service=sshd --permanent
+```
+
+## Add SSH to new zone:
+
+```bash
+sudo firewall-cmd --zone corp --add-service ssh --permanent
+```
+
+## Change Interface(s):
+
+```bash
+firewall-cmd --change-interface ens3 \
+  --zone corp --permanent
+```
+
+## Set Default Zone:
+
+```bash
+sudo firewall-cmd --set-default corp
+```
+
+## View Active Zones:
+
+```bash
+sudo firewall-cmd --get-active-zones
+```
+
+# Add/Remove Services:
+
+```bash
+sudo firewall-cmd --get-services
+
+sudo systemctl --enable --now httpd
+
+sudo firewall-cmd --add-service ssh --permanent
+sudo firewall-cmd --reload
+
+sudo firewall-cmd --remove-service ssh --permanent
+sudo firewall-cmd --reload
+
+sudo firewall-cmd --add-port 1622/tcp --permanent
+sudo firewall-cmd --reload
+
+sudo firewall-cmd --remove-port 1622/tcp --permanent
 sudo firewall-cmd --reload
 ```
 
@@ -42,4 +94,3 @@ sudo firewall-cmd --reload
 # To-Do:
 
 * `iptables`
-* 
