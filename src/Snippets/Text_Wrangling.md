@@ -18,7 +18,7 @@ grep -RPo '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'
 
 `grep 'A.*B'`
 
-## Regex any singer character (e.g. ACB or AEB)
+## Regex any single character (e.g. ACB or AEB)
 
 `grep 'A.B'`
 
