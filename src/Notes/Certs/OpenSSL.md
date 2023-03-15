@@ -1,8 +1,14 @@
 # OpenSSL
 
-# SSL Certificates Cheat-Sheet
+# SSL Certs
 
-X.509 is an ITU standard defining the format of public key certificates. X.509 are used in TLS/SSL, which is the basis for HTTPS. An X.509 certificate binds an identity to a public key using a digital signature. A certificate contains an identity (hostname, organization, etc.) and a public key (RSA, DSA, ECDSA, ed25519, etc.), and is either signed by a Certificate Authority or is Self-Signed.
+X.509 is an ITU standard defining the format of public key certificates.
+
+X.509 are used in TLS/SSL, which is the basis for HTTPS.
+
+An X.509 certificate binds an identity to a public key using a digital signature.
+
+A certificate contains an identity (hostname, organization, etc.) and a public key (RSA, DSA, ECDSA, ed25519, etc.), and is either signed by a Certificate Authority or is Self-Signed.
 
 ## Self-Signed Certificates
 
@@ -61,7 +67,8 @@ COMMAND | CONVERSION
 
 ## Install the CA Cert as a trusted root CA
 
-### On Debian & Derivatives
+### Debian:
+
 - Move the CA certificate (`ca.pem`) into `/usr/local/share/ca-certificates/ca.crt`.
 - Update the Cert Store with:
 ```bash
@@ -72,31 +79,36 @@ Refer the documentation [here](https://wiki.debian.org/Self-Signed_Certificate) 
 
 -----
 
-### On Fedora
+### RHEL:
+
 - Move the CA certificate (`ca.pem`) to `/etc/pki/ca-trust/source/anchors/ca.pem` or `/usr/share/pki/ca-trust-source/anchors/ca.pem`
 - Now run (with sudo if necessary):
 ```bash
 update-ca-trust
 ```
 
-Refer the documentation [here.](https://docs.fedoraproject.org/en-US/quick-docs/using-shared-system-certificates/)
+Documentation [here.](https://docs.fedoraproject.org/en-US/quick-docs/using-shared-system-certificates/)
 
 -----
 
-### On Arch
+### Arch:
+
 System-wide – Arch(p11-kit)
 
 - Run (As root)
-```bash
+
+    ```bash
 trust anchor --store myCA.crt
 ```
 - The certificate will be written to /etc/ca-certificates/trust-source/myCA.p11-kit and the "legacy" directories automatically updated.
 - If you get "no configured writable location" or a similar error, import the CA manually:
 - Copy the certificate to the /etc/ca-certificates/trust-source/anchors directory.
 - and then
-```bash 
+
+    ```bash 
 update-ca-trust
 ```
+
 Refer to the [ArchWiki](https://wiki.archlinux.org/title/User:Grawity/Adding_a_trusted_CA_certificate)
 
 -----
