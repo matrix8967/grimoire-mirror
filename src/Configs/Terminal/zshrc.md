@@ -21,9 +21,13 @@ export ZSH="/home/$USER/.oh-my-zsh"
 
 ZSH_THEME=powerlevel10k/powerlevel10k
 
-plugins=(zsh-kitty archlinux extract encode64 gnu-utils golang history-substring-search ipfs httpie jira jsontools kate keychain kubectl microk8s minikube nmap macos pass pip pipenvpyenv pylint python rbenv rsync ruby rust safe-paste screen shell-proxy ssh-agent sudo systemadmin systemd taskwarrior terraform themes tmux tmux-cssh tmuxinator torrent urltools vundle yum virtualenv zsh-autosuggestions zsh-syntax-highlighting gpg-agent gem git-extras firewalld docker-compose docker cp rust bundler ansible adb)
+plugins=(zsh-kitty archlinux extract encode64 gnu-utils golang history-substring-search ipfs httpie jira jsontools kate keychain kubectl microk8s minikube nmap macos pass pip pipenv pyenv pylint python rbenv rsync ruby rust safe-paste screen shell-proxy ssh-agent sudo systemadmin systemd taskwarrior terraform themes tmux tmux-cssh tmuxinator torrent urltools vundle yum virtualenv zsh-autosuggestions zsh-syntax-highlighting gpg-agent gem git-extras firewalld docker-compose docker cp rust bundler autoupdate ansible adb)
 
 source $ZSH/oh-my-zsh.sh
+
+# =====MOTD===== #
+
+# cat .ASCII/dontpanic.txt |lolcat && figlet -w 100 -l -k -f Bloody "Don't Panic!" | lolcat
 
 # =====GoLang===== #
 
@@ -52,7 +56,7 @@ export EDITOR="/usr/bin/vim"
 autoload -Uz compinit
 compinit
 # Completion for kitty
-kitty + complete setup zsh | source /dev/stdin
+# kitty + complete setup zsh | source /dev/stdin
 # zinit light redxtech/zsh-kitty
 
 # =====Bat/Man===== #
@@ -67,9 +71,14 @@ export PATH=/usr/bin:$PATH
 export DOCKER_HOST=unix:///run/user/1000/docker.sock
 
 # =====PostmarketOS===== #
+
 autoload bashcompinit
 bashcompinit
 eval "$(register-python-argcomplete pmbootstrap)"
+
+# =====1PasswordCLI===== #
+
+eval "$(op completion zsh)"; compdef _op op
 
 # =====Zsh Opts===== #
 
@@ -114,8 +123,20 @@ alias lsssh='ps aux | egrep "sshd: [a-zA-Z]+@"'
 
 # =====Functions===== #
 
-function pvpn {
-	sudo protonvpn c -f
+function pvpn-connect {
+protonvpn-cli connect --fastest
+}
+
+function pvpn-status {
+protonvpn-cli status
+}
+
+function pvpn-view {
+nmcli connection show --active
+}
+
+function pvpn-reset-ks {
+nmcli connection delete pvpn-ipv6leak-protection && nmcli connection delete pvpn-killswitch
 }
 
 function amimullvad {
@@ -135,7 +156,7 @@ function ElecomDeftPro {
 }
 
 function ElecomEX-GPro {
-	~/Scripts/./ElecomEX-GPro.sh
+~/Scripts/./ElecomEX-GPro.sh
 }
 
 function hs {
@@ -169,8 +190,7 @@ function Quotes {
 	a=7; echo $a; echo "$a"; echo '$a'; echo "'$a'"; echo '"$a"'
 }
 
-function cpu_temp(){
-
+function cpu_temp() {
 	# Init result
 	local result=0.00
 	# The first line of this file is x1000.
@@ -187,13 +207,19 @@ function cpu_temp(){
 }
 
 function Gitlab_Pull {
-	for dir in ~/Git/Gitlab/*/; do
+	for dir in ~/Git/Gitlab/\*/; do
 		git -C $dir pull
 	done
 }
 
 function Github_Pull {
-	for dir in ~/Git/Github/*/; do
+	for dir in ~/Git/Github/\*/; do
+		git -C $dir pull
+	done
+}
+
+function Dir_Pull {
+	for dir in $(pwd)/\*/; do
 		git -C $dir pull
 	done
 }
@@ -203,7 +229,7 @@ function strip_IPs {
 }
 
 function spotifydl {
-	spotify_dl -k -l "$1" -o ~/Music
+	spotify_dl -k -w -l "$1" -o ~/Music
 }
 
 function vid_dl {
@@ -218,6 +244,14 @@ function ADB_Text {
 	adb shell input text "$text"
 	adb shell input keyevent 66
 
+}
+
+function rpi_bl_off {
+	sudo chown -R $USER:$USER /sys/devices/platform/rpi_backlight/backlight/rpi_backlight/bl_power && echo 1 > /sys/devices/platform/rpi_backlight/backlight/rpi_backlight/bl_power
+}
+
+function rpi_bl_on {
+	sudo chown -R $USER:$USER /sys/devices/platform/rpi_backlight/backlight/rpi_backlight/bl_power && echo 0 > /sys/devices/platform/rpi_backlight/backlight/rpi_backlight/bl_power
 }
 
 # =====Blur for Kitty Term===== #

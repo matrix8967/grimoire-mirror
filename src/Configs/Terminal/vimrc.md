@@ -16,7 +16,6 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'dracula/vim', { 'name': 'dracula' }
-Plugin 'calviken/vim-gdscript3'
 Plugin 'preservim/nerdtree'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'rust-lang/rust.vim'
@@ -30,10 +29,11 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'gyim/vim-boxdraw'
 Plugin 'isobit/vim-caddyfile'
 Plugin 'mhartington/oceanic-next'
-Plugin 'blindFS/vim-taskwarrior'
 Plugin 'hzchirs/vim-material'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'PhilRunninger/nerdtree-visual-selection'
+Plugin 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plugin 'ghifarit53/tokyonight-vim'
 
 let g:strip_whitespace_on_save = 1
 let g:strip_whitespace_confirm = 0
@@ -68,27 +68,35 @@ let &t_ut=''
 
 syntax enable
 
+" Tokyo Night:
+
+let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_enable_italic = 1
+let g:tokyonight_transparent_background = 1
+
+colorscheme tokyonight
+
 " Material:
 
 " Oceanic:
 
 " Dark
-" set background=dark
-" colorscheme vim-material
+"set background=dark
+"colorscheme vim-material
 
 " Palenight
-" let g:material_style='palenight'
+"let g:material_style='palenight'
+"set background=dark
+"colorscheme vim-material
+
+" Oceanic
+" let g:material_style='oceanic'
 " set background=dark
 " colorscheme vim-material
 
-" Oceanic
-let g:material_style='oceanic'
-set background=dark
-colorscheme vim-material
-
 " Light
-" set background=light
-" colorscheme vim-material
+"set background=light
+"colorscheme vim-material
 
 " Dracula:
 
@@ -96,8 +104,16 @@ colorscheme vim-material
 " let g:dracula_colorterm = 0
 " colorscheme dracula
 
+" DraculaPro:
+
+" packadd! dracula_pro
+" syntax enable
+" let g:dracula_colorterm = 0
+" colorscheme dracula_pro
+
 " Powerline Colors:
 
 " let g:airline_theme='deus'
-let g:airline_theme='material'
+" let g:airline_theme='material'
+let g:airline_theme = "tokyonight"
 ```

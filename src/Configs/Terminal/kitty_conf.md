@@ -16,7 +16,8 @@ It's developed and maintained by [Kovid Goyal](https://github.com/kovidgoyal) wh
 # include themes/Dracula.conf
 # include themes/Juno-Ocean.conf
 # include themes/Edge.conf
-include themes/Material-Ocean.conf
+# include themes/Material-Ocean.conf
+include themes/TokyoNight.conf
 
 background_opacity .85
 
@@ -24,10 +25,17 @@ background_opacity .85
 
 # Use `kitty list-fonts --psnames` to get Font Names:
 
+Mononoki Nerd Font Mono
+    Mononoki Nerd Font Complete Mono Bold (MononokiNerdFontCompleteM-Bold)
+    Mononoki Nerd Font Complete Mono Bold Italic (MononokiNerdFontCompleteM-BoldItalic)
+    Mononoki Nerd Font Complete Mono Italic (MononokiNerdFontCompleteM-Italic)
+    Mononoki Nerd Font Complete Mono Regular (MononokiNerdFontCompleteM-Regular)
+
 font_size 16.0
-font_family		mononokiNerdFontComplet-Regular
-bold_font		mononokiNerdFontCompleteM-Bold
-italic_font		mononokiNerdFontComplete-Italic
+font_family		MononokiNerdFontCompleteM-Regular
+bold_font		MononokiNerdFontCompleteM-Bold
+italic_font		MononokiNerdFontCompleteM-Italic
+
 
 #       ===== Cursor =====  	#
 
