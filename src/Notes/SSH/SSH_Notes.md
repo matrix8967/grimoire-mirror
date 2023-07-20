@@ -42,6 +42,20 @@ ssh -i $PRIV_KEY -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o 
 ## RSync:
 
 ```bash
+rsync -rauLvhP /path/to/source /path/to/destination/
+```
+
+-   `r` = Recursive
+-   `a` = Archive
+-   `u` = Ignore Unless Newer.
+-   `L` = Preserve soft links.
+-   `v` = verbose
+-   `h` = Human Readable
+-   `P` = Progress
+
+-----
+
+```bash
 rsync -razuvhLP --exclude 'directory01' --exclude '*.ssh' --remove-source-files --info=progress2 -e "ssh -i /home/$USER/.ssh/keyfile" /home/example_directory $REMOTEUSER@$REMOTEHOST:/home/$USER/rsync_destination/ > /home/$USER/rsync_Output.txt
 ```
 
@@ -54,11 +68,11 @@ An example _one liner_ using RSync to back up a directory to a remote host:
   * (Validation Methods can be customized: Filesize, Hashsums, etc.)
 * Specifies a non-default `keyfile` for Authentication.
 * Uses the following RSync Flags:
-  * [r]ecursively
-  * [a]rchive
-  * Resolve Soft[l]inks
-  * Ignore Duplicates [u]nless newer.
-  * Display [h]uman-readable [P]rogress.
+  * `[r]`ecursively
+  * `[a]`rchive
+  * Resolve Soft`[l]`inks
+  * Ignore Duplicates `[u]`nless newer.
+  * Display `[h]`uman-readable `[P]`rogress.
 
 -----
 
